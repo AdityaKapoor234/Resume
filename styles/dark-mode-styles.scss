@@ -1,0 +1,2150 @@
+@import "variables";
+
+.dark {
+    .textHighlight {
+        color: $clr-dark-theme-purple100;
+    }
+
+    .headerBar {
+        padding: 1.5rem 5rem;
+
+        font-size: 18px;
+        font-weight: 500;
+        color: $clr-dark-theme-white100 !important;
+        background-color: $clr-dark-theme-black300;
+
+        -webkit-font-smoothing: antialiased;
+
+        position: relative;
+
+        .headerBarLeft {
+            width: 20%;
+        }
+
+        .headerBarCenter {
+            width: 60%;
+        }
+
+        .headerBarRight {
+            width: 20%;
+        }
+
+        .headerBarMenuIcon {
+            position: absolute;
+            left: 2%;
+            top: 50%;
+
+            transform: translateY(-50%);
+
+            z-index: 1;
+        }
+
+        .headerBarButtons {
+            text-transform: uppercase;
+
+            position: relative;
+
+            transition: all 0.3s ease;
+
+            .headerBarDropdown {
+                position: absolute;
+
+                // bottom: -380%;
+                bottom: -calc(100%);
+                width: fit-content;
+
+                // background-color: $clr-dark-theme-purple300;
+                background-color: $clr-dark-theme-purple100;
+                color: $clr-dark-theme-white100;
+
+                padding: 0rem 0rem 0rem 0rem;
+
+                border-radius: 20px;
+
+                z-index: 1;
+
+                overflow: hidden;
+
+                transition: all 0.3s ease;
+
+                .headerBarDropdownItem {
+                    padding: 0.7rem 4.23rem 0.7rem 1.5rem;
+
+                    width: 100%;
+
+                    transition: all 0.3s ease;
+
+                }
+
+                .headerBarDropdownItem:hover {
+                    background-color: $clr-dark-theme-purple200;
+                    color: $clr-dark-theme-white200;
+
+                    transition: all 0.3s ease;
+
+                    transform: scale(1.07);
+                }
+            }
+        }
+
+        .headerBarButtons:hover {
+            border-bottom: 5px solid $clr-dark-theme-purple100;
+
+            border-radius: 9px;
+
+            transition: all .3s ease;
+        }
+
+        .contactButton {
+            background-color: $clr-dark-theme-purple200 !important;
+            color: $clr-dark-theme-white100;
+
+            padding: 0.4rem 1.5rem;
+            border-radius: 20px;
+
+
+            transition: all 0.3s ease;
+        }
+
+        .contactButton:hover {
+            // background-color: $clr-dark-theme-purple400 !important;
+            // color: $clr-dark-theme-white200;
+            // border: 2px solid $clr-dark-theme-purple400;
+
+            background-color: $clr-dark-theme-black300 !important;
+            color: $clr-dark-theme-white200;
+            border: 5px solid $clr-dark-theme-purple400;
+
+            transition: all .3s ease;
+        }
+    }
+
+    .headerBarMenuDrawer {
+        background-color: $clr-dark-theme-black300;
+        height: 100vh;
+
+        overflow: scroll;
+
+        position: relative;
+
+        .headerBarMenuDrawerButtonsDivHieght {
+            height: 90vh;
+
+            overflow: scroll;
+
+            position: relative;
+        }
+
+        .headerBarMenuDrawerHeading {
+            color: $clr-dark-theme-purple100;
+            font-weight: 500;
+            text-transform: uppercase;
+            text-decoration: underline;
+
+            padding: 0.7rem 1rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 100%;
+            margin: auto;
+
+            position: relative;
+
+            .headerBarMenuDrawerHeadingIcon {
+                color: $clr-dark-theme-purple100;
+                position: absolute;
+                left: 5%;
+
+                transition: all .3s ease;
+            }
+
+            .headerBarMenuDrawerHeadingIcon:hover {
+                color: $clr-dark-theme-white100;
+
+                transition: all .3s ease;
+                transform: scale(1.4);
+            }
+        }
+
+        .headerBarMenuDrawerButtons {
+            color: $clr-dark-theme-white100;
+            font-weight: 500;
+            text-transform: uppercase;
+
+            padding: 0.7rem 1rem 0.7rem 1.5rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            width: 100%;
+            min-width: 245px;
+
+            transition: all 0.3s ease;
+        }
+
+        .headerBarMenuDrawerButtons:hover {
+            color: $clr-dark-theme-white200;
+            background-color: $clr-dark-theme-purple200;
+
+            transition: all .3s ease;
+
+            transform: scale(1.0423);
+        }
+
+        .headerBarMenuDrawerSubButtons {
+            color: $clr-dark-theme-white100;
+            font-weight: 500;
+            text-transform: uppercase;
+
+            padding: 0.7rem 0rem 0.7rem 2.54rem;
+
+            width: 100%;
+
+            transition: all 0.3s ease;
+        }
+
+        .headerBarMenuDrawerSubButtons:hover {
+            color: $clr-dark-theme-white200;
+            background-color: $clr-dark-theme-purple200;
+
+            transition: all .3s ease;
+
+            transform: scale(1.0423);
+        }
+
+        .headerBarMenuDrawerDarkModeButtons {
+            position: absolute;
+            bottom: 0vh;
+        }
+    }
+
+    .homeDarkBackground {
+        background-color: $clr-dark-theme-purple200;
+    }
+
+    .home {
+        color: $clr-dark-theme-white200;
+        padding: 7rem 12rem;
+
+        // background-color: $clr-dark-theme-gray300;
+        background-color: $clr-dark-theme-black200;
+
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 82%, 0 100%);
+
+        .homeHeadTextHighlight {
+            color: $clr-dark-theme-purple200;
+        }
+
+        .homeHeadText {
+            font-size: 3rem;
+            font-weight: 400;
+            margin-bottom: 0.4rem;
+            line-height: 3rem;
+            text-transform: uppercase;
+        }
+
+        .homeHeadDeignationText {
+            font-size: 1.423rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            line-height: 3rem;
+            text-transform: capitalize;
+        }
+
+        .homeHeadDescriptionText {
+            line-height: 1.5;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            font-size: 0.8rem;
+            // color: rgb(189, 180, 180);
+        }
+
+        .homeResumeButton {
+            color: $clr-dark-theme-white100;
+            background-color: $clr-dark-theme-purple300;
+            padding: 0.3rem 2rem;
+            border: 2px solid $clr-dark-theme-purple300;
+            border-radius: 4px;
+            width: fit-content;
+
+            transition: all 0.3s ease;
+        }
+
+        .homeResumeButton:hover {
+            // background-color: $clr-dark-theme-purple400;
+            // border: 5px solid $clr-dark-theme-purple400;
+
+            background-color: $clr-dark-theme-black200;
+            border: 5px solid $clr-dark-theme-purple400;
+
+            font-weight: 500;
+
+            transition: all .3s ease;
+        }
+
+        .homeHeadPicture {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            height: fit-content;
+            margin: auto;
+
+            .homeHeadPictureImg {
+                height: 234px !important;
+                width: 234px !important;
+
+                transition: all 0.3s ease;
+            }
+
+            .homeHeadPictureImg:hover {
+                height: 254px !important;
+                width: 254px !important;
+                transition: all .3s ease;
+            }
+        }
+    }
+
+    .aboutUs {
+        padding: 7rem 15rem;
+
+        background-color: $clr-dark-theme-black400;
+        color: $clr-dark-theme-white300;
+
+        .aboutUsImg {
+            height: auto;
+            width: 65%;
+            margin-right: 5rem;
+        }
+
+        .aboutUsDiv {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+
+            .aboutUsDivHead {
+                margin-bottom: 1rem;
+                font-size: 1.6rem;
+                font-weight: 400;
+                font-size: 2rem;
+            }
+
+            .aboutUsDivText {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+
+            .aboutUsDivDescription {
+                font-size: 0.9rem;
+                color: $clr-dark-theme-white300;
+                margin-bottom: 2rem;
+                line-height: 1.2rem;
+            }
+
+            .aboutUsDivCircleLinks {
+                display: flex;
+                flex-wrap: wrap;
+                // justify-content: space-between;
+
+                .aboutUsDivCircleLinksImg {
+                    font-size: 24px;
+                    margin-right: 18px;
+
+                    transition: all 0.3s ease;
+                }
+
+                .aboutUsDivCircleLinksImg:hover {
+                    color: $clr-dark-theme-purple200;
+                    font-size: 24px;
+                    transition: all .3s ease;
+                }
+            }
+        }
+    }
+
+    .skills {
+        color: $clr-dark-theme-purple300;
+        background-color: $clr-dark-theme-gray100;
+
+        // padding: 6rem 15rem;
+        padding-top: 6rem;
+        padding-left: 15rem;
+        padding-right: 15rem;
+
+        .skillsHeading {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 0.1rem;
+            font-weight: 500;
+        }
+
+        .skillsDescription {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .skillCardPadding {
+            margin-bottom: 6rem;
+
+            .skillCard {
+                background-color: $clr-dark-theme-white300;
+                border: 2px solid $clr-dark-theme-blue500;
+                border-radius: 15px;
+                box-shadow: 7px 7px 5px $clr-dark-theme-blue500;
+
+                position: relative;
+
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+                padding-bottom: 2rem;
+
+                height: 100%;
+                width: 85%;
+
+                margin: auto;
+
+                transition: all 0.3s ease;
+
+                .skillCardLogo {
+                    background-color: $clr-dark-theme-black100;
+                    border: 3px solid $clr-dark-theme-blue500;
+                    border-radius: 50%;
+
+                    position: absolute;
+                    left: 50%;
+
+                    transform: translate(-50%, -55%);
+
+                    height: 80px;
+                    width: 80px;
+
+                    overflow: hidden;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    transition: all 0.3s ease;
+
+                    img {
+                        height: auto;
+                        width: 70%;
+                    }
+                }
+
+                .skillCardHead {
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                    margin-bottom: 0.2rem;
+                    text-align: center;
+                }
+
+                .skillCardDescription {
+                    font-size: 0.8rem;
+                    text-align: center;
+
+                    .skillCardDescriptionView {
+                        color: $clr-dark-theme-purple400;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .skillCard:hover {
+                border: 2px solid $clr-dark-theme-orange200;
+                background-color: $clr-dark-theme-white200;
+                box-shadow: 9px 9px 7px $clr-dark-theme-orange200;
+
+
+                transform: scale(1.1);
+                transition: all 0.3s ease;
+
+                .skillCardLogo {
+                    border: 3px solid $clr-dark-theme-orange200;
+
+                    transition: all 0.3s ease;
+                }
+
+                .skillCardDescription {
+
+                    .skillCardDescriptionView {
+                        color: $clr-dark-theme-purple500;
+                    }
+                }
+
+                .skillCardHead {
+                    color: $clr-dark-theme-purple500;
+                }
+            }
+        }
+    }
+
+    .educationPolygon1 {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 86%, 0 100%);
+    }
+
+    .educationPolygon2 {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 92%, 0 100%);
+    }
+
+    .educationPolygon3 {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 92%, 0 100%);
+    }
+
+    .educationPolygon4 {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 94%, 0 100%);
+    }
+
+    .educationPolygon5 {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
+    }
+
+    .education {
+        color: $clr-dark-theme-white300;
+        padding-top: 7rem;
+        padding-left: 12rem;
+        padding-right: 12rem;
+
+        background-color: $clr-dark-theme-black400;
+
+        .educationHeading {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 0.1rem;
+            font-weight: 400;
+        }
+
+        .educationDescription {
+            font-size: 0.9rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .educationSubHeading {
+            font-size: 2.5rem;
+            margin-top: 5rem;
+            margin-bottom: 1rem;
+            font-weight: 400;
+            display: flex;
+            align-items: flex-end;
+
+            position: relative;
+
+            .degreeCapImg {
+                font-size: 2.34rem;
+            }
+
+            .certificateCapImg {
+                height: 45px;
+                width: auto;
+            }
+
+            .educationSubHeadingCap {
+                position: absolute;
+                // bottom: -324%;
+                left: -3%;
+            }
+
+            .educationSubHeadingLine {
+                border-bottom: 4px solid $clr-dark-theme-white300;
+                width: 87%;
+                margin-left: auto;
+                margin-right: 0%;
+            }
+
+            .certificationSubHeadingLine {
+                border-bottom: 4px solid $clr-dark-theme-white300;
+                width: 79.5%;
+                margin-left: auto;
+                margin-right: 0%;
+            }
+        }
+
+        .educationCard {
+            display: flex;
+            justify-content: center;
+
+            height: 100%;
+            width: 85%;
+
+            margin-bottom: 7rem;
+
+            .graduationInfo {
+                border-top: 4px solid $clr-dark-theme-white300;
+                border-radius: 2px;
+                width: 100%;
+                position: relative;
+
+                .graduationCap {
+                    width: 10%;
+                    display: flex;
+                    align-items: flex-start;
+
+                    position: absolute;
+                    top: -20px;
+                    left: -25px;
+
+                    .graduationCapImg {
+                        color: $clr-dark-theme-purple200;
+                        font-size: 24px;
+                    }
+                }
+
+                .certificationCap {
+                    width: 10%;
+                    display: flex;
+                    align-items: flex-start;
+
+                    position: absolute;
+                    top: -20px;
+                    left: -32px;
+
+                    .certificationCapImg {
+                        height: 24px;
+                        width: auto;
+                    }
+                }
+
+                .graduationInfoCard {
+                    padding: 1.5rem 1rem;
+
+                    .graduationYear {
+                        padding: 0.234rem 2rem;
+                        background-color: $clr-dark-theme-gray300;
+                        width: fit-content;
+                        border-radius: 40px;
+                        margin: auto;
+                    }
+
+                    .graduationDegree {
+                        color: $clr-dark-theme-purple100;
+                        font-size: 1.3rem;
+                        font-weight: 500;
+                        padding-top: 1.5rem;
+                    }
+
+                    .graduationDegreeDescription {
+                        line-height: 1rem;
+                        font-size: 0.8rem;
+                        font-weight: lighter;
+                    }
+                }
+            }
+        }
+    }
+
+    .workExperience {
+        padding: 7rem 12rem;
+        background-color: $clr-dark-theme-gray100;
+        color: $clr-dark-theme-white200;
+
+        .workExperienceHead {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 0.1rem;
+            font-weight: 400;
+        }
+
+        .workExperienceCard {
+            background-color: $clr-dark-theme-white300;
+            border-radius: 15px;
+            box-shadow: 7px 7px 5px $clr-dark-theme-blue500;
+            border: 2px solid $clr-dark-theme-blue500;
+
+            position: relative;
+
+            padding-top: 2rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            padding-bottom: 2rem;
+
+            height: 100%;
+            width: 85%;
+
+            margin: auto;
+            margin-top: 3rem;
+
+
+            transition: all 0.5s ease;
+
+
+            .workExperienceDesignation {
+                color: $clr-dark-theme-purple200;
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin-bottom: 0.1rem;
+                text-decoration: underline;
+            }
+
+            .workExperienceComapnyLogo {
+                height: 1.5rem;
+                width: auto;
+            }
+
+            .workExperienceComapnyName {
+                color: $clr-dark-theme-purple200;
+                font-size: 1rem;
+                font-weight: 600;
+                margin-bottom: 0.4rem;
+            }
+
+            .workExperienceIcons {
+                font-size: 1rem;
+                color: $clr-dark-theme-purple400;
+            }
+
+            .workExperienceTimePeriod {
+                color: $clr-dark-theme-black200;
+                font-size: 1rem;
+
+                display: flex;
+                align-items: center;
+                justify-content: left;
+            }
+
+            .workExperienceLocation {
+                color: $clr-dark-theme-black200;
+                font-size: 1rem;
+
+                display: flex;
+                align-items: center;
+                justify-content: right;
+            }
+
+            .workExperienceDescription {
+                color: $clr-dark-theme-gray100;
+                font-size: 1rem;
+                font-weight: lighter;
+            }
+        }
+
+        .workExperienceCard:hover {
+            border: 2px solid $clr-dark-theme-orange200;
+            background-color: $clr-dark-theme-white200;
+            box-shadow: 9px 9px 7px $clr-dark-theme-orange200;
+
+
+            transform: scale(1.1);
+            transition: all 0.5s ease;
+
+            .workExperienceDesignation {
+                color: $clr-dark-theme-purple500;
+            }
+
+            .workExperienceComapnyName {
+                color: $clr-dark-theme-purple500;
+            }
+
+            .workExperienceIcons {
+                color: $clr-dark-theme-purple500;
+            }
+        }
+    }
+
+    .projects {
+        background-color: $clr-dark-theme-black400;
+        color: $clr-dark-theme-white300;
+        padding: 7rem 12rem;
+
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 92%, 0 100%);
+
+        .projectsHead {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 0.1rem;
+            font-weight: 500;
+        }
+
+        .projectsSubHead {
+            font-size: 2rem;
+            margin-top: 5rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            .projectsSubHeadImg {
+                height: 2.5rem;
+                width: auto;
+            }
+        }
+
+        .projectComapanyName {
+            color: $clr-dark-theme-purple200;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 3rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .projectComapanyLogo {
+            height: 2rem;
+            width: auto;
+        }
+
+        .projectComapanyDescription {
+            color: $clr-dark-theme-white200;
+            font-size: 0.8rem;
+            font-weight: 400;
+            margin-bottom: 0.7rem;
+        }
+
+        .projectCard {
+            background-color: $clr-dark-theme-white300;
+            border-radius: 15px;
+            box-shadow: 7px 7px 5px $clr-dark-theme-blue500;
+            border: 2px solid $clr-dark-theme-blue500;
+
+            padding-top: 2rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            padding-bottom: 2rem;
+
+            height: 100%;
+            width: 85%;
+
+            margin: auto;
+            margin-top: 3rem;
+
+
+            transition: all 0.5s ease;
+
+
+            .projectName {
+                color: $clr-dark-theme-purple200;
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin-bottom: 0.1rem;
+                text-decoration: underline;
+            }
+
+            .projectLogoDiv {
+                width: fit-content;
+                margin: auto;
+                margin-bottom: 1.5rem;
+            }
+
+            .projectLogo {
+                height: 3.24rem;
+                width: auto;
+            }
+
+            .projectDescription {
+                color: $clr-dark-theme-gray100;
+                font-size: 1rem;
+                font-weight: 600;
+                margin-bottom: 0.4rem;
+            }
+
+            .projectIcons {
+                font-size: 0.8rem;
+                color: $clr-dark-theme-black200;
+                ;
+            }
+
+            .projectTimePeriod {
+                color: $clr-dark-theme-black200;
+                font-size: 0.8rem;
+
+                display: flex;
+                align-items: center;
+                justify-content: right;
+            }
+
+            .projectLinkRow {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .projectLink {
+                color: $clr-dark-theme-purple200;
+                font-size: 1rem;
+                font-weight: 400;
+                margin-bottom: 0.1rem;
+                text-decoration: underline;
+
+                width: fit-content;
+
+                transition: all 0.5s ease;
+
+                display: flex;
+                align-items: center;
+
+                .projectLinkIcon {
+                    color: $clr-dark-theme-purple200;
+                    font-size: 1.5rem;
+
+                    transition: all 0.5s ease;
+                }
+
+                .gitLinkIcon {
+                    color: $clr-dark-theme-purple200;
+                    font-size: 1.2rem;
+
+                    transition: all 0.5s ease;
+                }
+            }
+
+            .projectLink:hover {
+                color: $clr-dark-theme-purple500;
+
+                transition: all 0.5s ease;
+
+                .projectLinkIcon {
+                    color: $clr-dark-theme-purple500;
+                    font-size: 1.5rem;
+
+                    transition: all 0.5s ease;
+                }
+
+                .gitLinkIcon {
+                    color: $clr-dark-theme-purple500;
+                    font-size: 1.2rem;
+
+                    transition: all 0.5s ease;
+                }
+            }
+
+        }
+
+        .projectCard:hover {
+            border: 2px solid $clr-dark-theme-orange200;
+            background-color: $clr-dark-theme-white200;
+            box-shadow: 9px 9px 7px $clr-dark-theme-orange200;
+
+
+            transform: scale(1.1);
+            transition: all 0.5s ease;
+
+            .projectName {
+                color: $clr-dark-theme-purple500;
+            }
+
+            .projectLink {
+                color: $clr-dark-theme-purple500;
+
+                transition: all 0.5s ease;
+
+                .projectLinkIcon {
+                    color: $clr-dark-theme-purple500;
+                    font-size: 1.5rem;
+
+                    transition: all 0.5s ease;
+                }
+
+                .gitLinkIcon {
+                    color: $clr-dark-theme-purple500;
+                    font-size: 1.2rem;
+
+                    transition: all 0.5s ease;
+                }
+            }
+        }
+    }
+
+    .contact {
+        padding: 7rem 12rem;
+        background-color: $clr-dark-theme-gray100;
+        color: $clr-dark-theme-white200;
+
+        .contactHeading {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 0.1rem;
+        }
+
+        .contactDescription {
+            text-align: center;
+            margin-bottom: 4rem;
+            color: $clr-dark-theme-white200;
+        }
+
+        .contactIconDivHover {
+            cursor: pointer;
+
+            transition: all 0.3s ease;
+
+            .contactIconDiv {
+                width: fit-content;
+                margin: auto;
+
+                .contactIcon {
+                    width: fit-content;
+                    margin: auto;
+
+                    transition: all 0.3s ease;
+                }
+
+                .contactIcon:hover {
+                    color: $clr-dark-theme-purple300;
+
+                    transition: all 0.3s ease;
+                }
+            }
+
+            .contactIconHead {
+                font-size: 1rem;
+                font-weight: 500;
+
+                width: fit-content;
+                margin: auto;
+            }
+
+            .contactIconDescription {
+                font-size: 0.8rem;
+                margin-bottom: 3rem;
+
+                width: fit-content;
+                margin: auto;
+            }
+        }
+
+        .contactIconDivHover:hover {
+            transform: scale(1.234);
+            transition: all 0.3s ease;
+            cursor: pointer;
+
+            .textHighlight {
+                color: $clr-dark-theme-purple300;
+            }
+
+            .contactIconDiv {
+                .contactIcon {
+                    color: $clr-dark-theme-purple300;
+                }
+            }
+        }
+
+        .contactForm {
+            margin-top: 5rem;
+
+            .login-form {
+                font-size: 0.85rem;
+                color: $clr-dark-theme-purple400;
+
+                label {
+                    color: $clr-dark-theme-white200;
+                    padding-top: 30px;
+                    margin: 0;
+                    font-size: 1rem;
+                    // padding-bottom: 0.7rem;
+                }
+
+                .mandatory-star {
+                    color: $clr-dark-theme-purple300;
+                    font-weight: 800;
+                    padding-left: 2px;
+                }
+
+                .error-msg {
+                    color: red !important;
+                    font-weight: normal !important;
+                }
+
+                @media (max-width:575px) {
+                    label {
+                        color: $clr-dark-theme-white200;
+                        padding-top: 30px;
+                        margin: 0;
+                        font-size: 0.8rem !important;
+                        // padding-bottom: 0.7rem;
+                    }
+                }
+
+                input {
+                    border: 2.5px solid $clr-dark-theme-purple300;
+                    width: 100%;
+                    padding: 15px;
+                    height: 45px;
+                    color: $clr-dark-theme-purple500;
+                }
+
+                input:focus {
+                    outline: none;
+                }
+
+                textarea {
+                    border: 2.5px solid $clr-dark-theme-purple300;
+                    width: 100%;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    height: 90px;
+                    color: $clr-dark-theme-purple500;
+                }
+
+                textarea:focus {
+                    outline: none;
+                }
+
+                .custom-btn {
+                    background-color: $clr-dark-theme-purple300;
+                    border: 0.1rem solid $clr-dark-theme-purple300;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: $clr-dark-theme-white200;
+                    font-size: 1rem;
+                    padding: 0.6rem 1rem;
+                    width: 40%;
+                    cursor: pointer;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+
+                    transition: all 0.3s ease;
+
+                    .arrow-icon {
+                        font-size: 1.2rem !important;
+                    }
+                }
+
+                .custom-btn:hover {
+                    // background-color: $clr-dark-theme-purple400 !important;
+                    // color: $clr-dark-theme-white200;
+                    // border: 2px solid $clr-dark-theme-purple400;
+
+                    background-color: $clr-dark-theme-gray100;
+                    color: $clr-dark-theme-white200;
+                    border: 5px solid $clr-dark-theme-purple400;
+        
+                    font-weight: 500;        
+
+                    transition: all .3s ease;
+                }
+
+                span {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .footer {
+        color: $clr-dark-theme-white200;
+        background-color: $clr-dark-theme-black300;
+        // padding: 5rem 12rem;
+        padding-top: 3rem;
+        padding-left: 12rem;
+        padding-right: 12rem;
+
+        .footerHead {
+            text-decoration: none;
+            color: $clr-dark-theme-white200;
+            font-size: 2rem;
+
+            width: fit-content;
+            margin: auto;
+        }
+
+        .footerDivCircleLinks {
+            display: flex;
+            flex-wrap: wrap;
+            // justify-content: space-between;
+            align-items: center;
+
+            width: fit-content;
+            // margin-top: 0.5rem;
+            margin-left: auto;
+            margin-right: auto;
+
+            padding-bottom: 2rem;
+
+            .footerDivCircleLinksImg {
+                font-size: 24px;
+                margin-right: 18px;
+                padding-top: 0.7rem;
+                padding-bottom: 0.7rem;
+
+                transition: all 0.5s ease;
+            }
+
+            .footerDivCircleLinksImg:hover {
+                background-color: $clr-dark-theme-purple400;
+                border-radius: 50%;
+                padding: 0.7rem;
+                font-size: 24px;
+                transition: all .5s ease;
+            }
+        }
+
+        .footerCopyRight {
+            font-size: 0.8rem;
+            font-weight: lighter;
+            padding-bottom: 1rem;
+
+            width: fit-content;
+            margin: auto;
+
+            text-align: center;
+        }
+    }
+
+
+
+    @media (max-width: 1299.5px) and (min-width: 1200px) {
+        .headerBar {
+            padding: 1.5rem 2rem;
+
+            .headerBarLeft {
+                width: 18%;
+            }
+
+            .headerBarCenter {
+                width: 62%;
+            }
+
+            .headerBarRight {
+                width: 20%;
+            }
+        }
+
+        .home {
+            padding: 7rem 8rem;
+        }
+
+        .aboutUs {
+            padding: 7rem 8rem;
+        }
+
+        .skills {
+            padding-top: 6rem;
+            padding-left: 8rem;
+            padding-right: 8rem;
+        }
+
+        .educationPolygon1 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 88%, 0 100%);
+        }
+    
+        .educationPolygon2 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 94%, 0 100%);
+        }
+    
+        .educationPolygon3 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95.4%, 0 100%);
+        }
+    
+        .educationPolygon4 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 96.5%, 0 100%);
+        }
+    
+        .educationPolygon5 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 97%, 0 100%);
+        }
+    
+        .education {
+            padding-top: 6rem;
+            padding-left: 8rem;
+            padding-right: 8rem;
+
+            .educationDescription {
+                margin-bottom: 1rem;
+            }
+
+            .educationSubHeading {
+                margin-top: 7rem;
+            }
+
+            .educationCard {
+                margin-bottom: 3rem;
+            }
+        }
+
+        .workExperience {
+            padding: 7rem 8rem;
+        }
+
+        .projects {
+            padding: 7rem 8rem;
+
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 94%, 0 100%);
+        }
+
+        .contact {
+            padding: 7rem 8rem;
+        }
+
+        .footer {
+            padding-top: 3rem;
+            padding-left: 8rem;
+            padding-right: 8rem;
+        }
+    }
+
+    @media (max-width: 1199.5px) and (min-width: 992px) {
+        .headerBar {
+            padding: 1.5rem 5rem;
+
+            .headerBarLeft {
+                width: 50%;
+            }
+
+            .headerBarCenter {
+                width: 0%;
+            }
+
+            .headerBarRight {
+                width: 50%;
+            }
+        }
+
+        .home {
+            padding: 7rem 5rem;
+        }
+
+        .aboutUs {
+            padding: 7rem 5rem;
+        }
+
+        .skills {
+            padding-top: 5rem;
+            padding-left: 3.24rem;
+            padding-right: 3.24rem;
+        }
+
+        .educationPolygon1 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 92%, 0 100%);
+        }
+    
+        .educationPolygon2 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 96%, 0 100%);
+        }
+    
+        .educationPolygon3 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 97%, 0 100%);
+        }
+    
+        .educationPolygon4 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 97.5%, 0 100%);
+        }
+    
+        .educationPolygon5 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 98%, 0 100%);
+        }
+
+        .education {
+            padding-top: 5rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+
+            .educationDescription {
+                margin-bottom: 1rem;
+            }
+
+            .educationSubHeading {
+                margin-top: 5rem;
+            }
+
+            .educationCard {
+                margin-bottom: 1rem;
+            }
+        }
+
+        .workExperience {
+            padding: 5rem 5rem;
+        }
+
+        .projects {
+            padding: 5rem 5rem;
+
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 96%, 0 100%);
+        }
+
+        .contact {
+            padding: 5rem 5rem;
+        }
+
+        .footer {
+            padding-top: 3rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+    }
+
+    @media (max-width: 991.5px) and (min-width: 768px) {
+        .headerBar {
+            padding: 1.5rem 5rem;
+
+            .headerBarLeft {
+                width: 50%;
+            }
+
+            .headerBarCenter {
+                width: 0%;
+            }
+
+            .headerBarRight {
+                width: 50%;
+            }
+        }
+
+        .home {
+            padding: 7rem 5rem;
+
+            .homeHeadText {
+                font-size: 2.34rem;
+                margin-bottom: 0rem;
+            }
+
+            .homeHeadDeignationText {
+                font-size: 1.234rem;
+            }
+
+            .homeHeadPicture {
+
+                .homeHeadPictureImg {
+                    height: 170px !important;
+                    width: 170px !important;
+                }
+
+                .homeHeadPictureImg:hover {
+                    height: 190px !important;
+                    width: 190px !important;
+                }
+            }
+        }
+
+        .aboutUs {
+            padding: 7rem 4.23rem;
+
+            .aboutUsImg {
+                height: auto;
+                width: 80%;
+                margin-right: 4rem;
+            }
+
+            .aboutUsDiv {
+
+                .aboutUsDivCircleLinks {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    .aboutUsDivCircleLinksImg {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+
+        .skills {
+            padding-top: 5rem;
+            padding-left: 3.24rem;
+            padding-right: 3.24rem;
+        }
+
+        .educationPolygon1 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 92%, 0 100%);
+        }
+    
+        .educationPolygon2 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 96%, 0 100%);
+        }
+    
+        .educationPolygon3 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 97%, 0 100%);
+        }
+    
+        .educationPolygon4 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 97.5%, 0 100%);
+        }
+    
+        .educationPolygon5 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 97.7%, 0 100%);
+        }
+
+        .education {
+            padding-top: 5rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+
+            .educationSubHeading {
+                font-size: 2rem;
+                margin-top: 5rem;
+                margin-bottom: 0rem;
+            }
+
+            .educationCard {
+
+                height: 100%;
+                width: 95%;
+
+                margin-bottom: 1rem;
+
+                .graduationInfo {
+
+                    .graduationInfoCard {
+                        padding: 1.5rem 0rem;
+
+
+                        .graduationDegree {
+                            font-size: 1.2rem;
+                            padding-top: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .workExperience {
+            padding: 5rem 3.24rem;
+        }
+
+        .projects {
+            padding: 5rem 3.24rem;
+
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 96%, 0 100%);
+
+            .projectCard {
+                padding-top: 2rem;
+                padding-left: 3rem;
+                padding-right: 3rem;
+                padding-bottom: 2rem;
+            }
+        }
+
+        .contact {
+            padding: 5rem 3.24rem;
+        }
+
+        .footer {
+            padding-top: 3rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+
+    @media (max-width: 767.5px) and (min-width: 550px) {
+        .headerBar {
+            padding: 1.5rem 0rem;
+
+            .headerBarLeft {
+                width: fit-content;
+                margin: auto;
+            }
+
+            .headerBarCenter {
+                width: 0%;
+            }
+
+            .headerBarRight {
+                width: 0%;
+            }
+        }
+
+        .home {
+            padding: 4rem 1.5rem;
+
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 92%, 0 100%);
+
+            .homeHeadText {
+                font-size: 1.7rem;
+                line-height: 2rem;
+
+                text-align: center;
+            }
+
+            .homeHeadDeignationText {
+                font-size: 1.423rem;
+                line-height: 2rem;
+
+                text-align: center;
+            }
+
+            .homeHeadDescriptionText {
+                text-align: center;
+            }
+
+            .homeResumeButton {
+                padding: 0.3rem 3.5rem;
+                width: fit-content;
+                margin: auto;
+            }
+
+            .homeHeadPicture {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: fit-content;
+                height: fit-content;
+                margin: auto;
+
+                .homeHeadPictureImg {
+                    height: 234px !important;
+                    width: 234px !important;
+
+                    transition: all 0.3s ease;
+                }
+
+                .homeHeadPictureImg:hover {
+                    height: 254px !important;
+                    width: 254px !important;
+                    transition: all .3s ease;
+                }
+            }
+        }
+
+        .aboutUs {
+            padding: 4rem 1.5rem;
+
+            .aboutUsImg {
+                height: auto;
+                width: 100%;
+                margin-right: 0rem;
+            }
+        }
+
+        .skills {
+            padding-top: 4rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
+        .educationPolygon1 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 96%, 0 100%);
+        }
+    
+        .educationPolygon2 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 97.5%, 0 100%);
+        }
+    
+        .educationPolygon3 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 98.4%, 0 100%);
+        }
+    
+        .educationPolygon4 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 98.7%, 0 100%);
+        }
+    
+        .educationPolygon5 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 99%, 0 100%);
+        }
+
+        .education {
+            padding-top: 4rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+
+            .educationHeading {
+                font-size: 2.5rem;
+                text-align: center;
+                margin-bottom: 0.1rem;
+                font-weight: 400;
+            }
+
+            .educationDescription {
+                font-size: 0.9rem;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            .educationSubHeading {
+                font-size: 2rem;
+                margin-top: 5rem;
+                margin-bottom: 0rem;
+
+                .educationSubHeadingCap {
+                    left: 0%;
+                }
+            }
+
+            .educationCard {
+                display: flex;
+                justify-content: center;
+
+                height: 100%;
+                width: 85%;
+
+                margin-bottom: 1rem;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .workExperience {
+            padding: 4rem 1.5rem;
+
+            .workExperienceCard {
+                padding-top: 2rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                padding-bottom: 2rem;
+
+                .workExperienceLocation {
+                    display: flex;
+                    align-items: center;
+                    justify-content: left;
+
+                    margin-top: 0.1rem;
+                }
+            }
+        }
+
+        .projects {
+            padding: 4rem 1.5rem;
+
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 97.5%, 0 100%);
+
+            .projectCard {
+                padding-top: 2rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                padding-bottom: 2rem;
+
+                .projectName {
+                    font-size: 1.234rem;
+                }
+            }
+        }
+
+        .contact {
+            padding: 4rem 1.5rem;
+        }
+
+        .footer {
+            padding-top: 3rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+
+        }
+    }
+
+    @media (max-width: 550px) {
+        .headerBar {
+            padding: 1.5rem 0rem;
+
+            .headerBarLeft {
+                width: fit-content;
+                margin: auto;
+            }
+
+            .headerBarCenter {
+                width: 0%;
+            }
+
+            .headerBarRight {
+                width: 0%;
+            }
+        }
+
+        .home {
+            padding: 4rem 1.5rem;
+
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 92%, 0 100%);
+
+            .homeHeadText {
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+
+                text-align: center;
+
+                margin-top: 0.7rem;
+                margin-bottom: 0rem;
+            }
+
+            .homeHeadDeignationText {
+                font-size: 1.234rem;
+                margin-bottom: 1rem;
+                line-height: 2rem;
+
+                text-align: center;
+            }
+
+            .homeHeadDescriptionText {
+                text-align: center;
+            }
+
+            .homeResumeButton {
+                padding: 0.3rem 3.5rem;
+                width: fit-content;
+                margin: auto;
+            }
+
+            .homeHeadPicture {
+
+                .homeHeadPictureImg {
+                    height: 123px !important;
+                    width: 123px !important;
+                }
+
+                .homeHeadPictureImg:hover {
+                    height: 145px !important;
+                    width: 145px !important;
+                }
+            }
+        }
+
+        .aboutUs {
+            padding: 4rem 1.5rem;
+
+            .aboutUsImg {
+                height: auto;
+                width: 65%;
+                margin-right: auto;
+                margin-left: auto;
+                margin-bottom: 1.5rem;
+            }
+
+            .aboutUsDiv {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+
+
+                .aboutUsDivHead {
+                    font-size: 1.7rem;
+                }
+
+                .aboutUsDivText {
+                    font-size: 1rem;
+                    margin-bottom: 0.5rem;
+                }
+
+                .aboutUsDivDescription {
+                    font-size: 0.9rem;
+                }
+
+                .aboutUsDivCircleLinks {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    .aboutUsDivCircleLinksImg {
+                        font-size: 24px;
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+
+        .skills {
+            padding-top: 4rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+
+            .skillsHeading {
+                font-size: 2rem;
+            }
+        }
+
+        .educationPolygon1 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 96%, 0 100%);
+        }
+    
+        .educationPolygon2 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 98.5%, 0 100%);
+        }
+    
+        .educationPolygon3 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 98.4%, 0 100%);
+        }
+    
+        .educationPolygon4 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 98.9%, 0 100%);
+        }
+    
+        .educationPolygon5 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 99.1%, 0 100%);
+        }
+
+        .education {
+            padding-top: 4rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+
+            .educationHeading {
+                font-size: 2rem;
+            }
+
+            .educationDescription {
+                font-size: 0.9rem;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            .educationSubHeading {
+                font-size: 1.7rem;
+                margin-top: 5rem;
+                margin-bottom: 0rem;
+
+                .educationSubHeadingCap {
+                    left: 0%;
+                }
+
+                .educationSubHeadingCap {
+                    left: 0%;
+                }
+            }
+
+            .educationCard {
+                display: flex;
+                justify-content: center;
+
+                height: 100%;
+                width: 85%;
+
+                margin-bottom: 1rem;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .workExperience {
+            padding: 4rem 1.5rem;
+
+            .workExperienceHead {
+                font-size: 2rem;
+            }
+
+            .workExperienceCard {
+                padding-top: 2rem;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+                padding-bottom: 2rem;
+
+                height: 100%;
+                width: 85%;
+
+                .workExperienceDesignation {
+                    font-size: 1.234rem;
+                }
+
+                .workExperienceComapnyLogo {
+                    height: 1.2rem;
+                    width: auto;
+                }
+
+                .workExperienceComapnyName {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    margin-bottom: 0.4rem;
+                }
+
+                .workExperienceIcons {
+                    font-size: 0.8rem;
+                }
+
+                .workExperienceTimePeriod {
+                    font-size: 0.8rem;
+                }
+
+                .workExperienceLocation {
+                    font-size: 0.8rem;
+
+                    justify-content: left;
+                }
+
+                .workExperienceDescription {
+                    font-size: 0.9rem;
+                    font-weight: lighter;
+                }
+            }
+        }
+
+        .projects {
+            padding: 4rem 1.5rem;
+
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 97.5%, 0 100%);
+
+            .projectsHead {
+                font-size: 2rem;
+            }
+
+            .projectsSubHead {
+                font-size: 1.5rem !important;
+
+                .projectsSubHeadImg {
+                    height: 2rem;
+                    width: auto;
+                }
+            }
+
+            .projectComapanyName {
+                font-size: 1.423rem;
+            }
+
+            .projectComapanyLogo {
+                height: 1.7rem;
+                width: auto;
+            }
+
+            .projectCard {
+                padding-top: 2rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                padding-bottom: 2rem;
+
+                .projectName {
+                    font-size: 1.234rem;
+                }
+
+                .projectLogo {
+                    height: 2.34rem;
+                    width: auto;
+                }
+
+                .projectDescription {
+                    font-size: 0.8rem;
+                }
+
+                .projectIcons {
+                    font-size: 0.7rem;
+                }
+
+                .projectTimePeriod {
+                    font-size: 0.7rem;
+                }
+
+                .projectLink {
+                    font-size: 0.8rem;
+
+                    .projectLinkIcon {
+                        font-size: 1rem;
+                    }
+
+                    .gitLinkIcon {
+                        font-size: 1rem;
+                    }
+                }
+
+                .projectLink:hover {
+
+                    .projectLinkIcon {
+                        font-size: 1rem;
+                    }
+
+                    .gitLinkIcon {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .projectCard:hover {
+
+                .projectLink {
+
+                    .projectLinkIcon {
+                        font-size: 1rem;
+                    }
+
+                    .gitLinkIcon {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .contact {
+            padding: 4rem 1.5rem;
+
+            .contactHeading {
+                font-size: 2rem;
+            }
+
+            .contactIconDivHoverRow {
+                width: auto;
+                margin: auto;
+            }
+
+            .contactIconDivHover {
+                width: fit-content;
+                margin: auto;
+
+                .contactIconDiv {
+                    width: fit-content;
+                    margin: auto;
+                }
+            }
+
+            .contactIconDivHover:hover {
+                transform: scale(1.234);
+            }
+
+            .contactForm {
+                margin-top: 1rem;
+
+                .login-form {
+                    font-size: 0.85rem;
+
+                    input {
+                        width: 100%;
+                        padding: 15px 7px;
+                    }
+
+                    textarea {
+                        padding-left: 7px;
+                        padding-right: 7px;
+                    }
+
+                    .custom-btn {
+                        font-size: 1rem;
+                        padding: 0.4rem 3rem;
+                        width: fit-content;
+                    }
+                }
+            }
+        }
+
+        .footer {
+            padding-top: 3rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            .footerHead {
+                font-size: 1.5rem;
+            }
+
+            .footerDivCircleLinks {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+
+                padding-bottom: 2rem;
+
+                .footerDivCircleLinksImg {
+                    font-size: 18px;
+                    margin-right: 0px;
+                }
+
+                .footerDivCircleLinksImg:hover {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .slick-slider {
+        .slick-dots li button:before {
+            // content: "";
+            // border: 1px solid transparent;
+            // height: 20px;
+            // width: 20px;
+            // border-radius: 50%;
+            // font-size: 11px !important;
+            // color: #323abb !important;
+
+            color: #ffffff !important;
+        }
+
+        .slick-dots li.slick-active button:before {
+            // border: 1px solid #f76e33;
+            // color: #f76e33 !important;
+
+            border: 1px solid #ffffff;
+            color: #ffffff !important;
+        }
+    }
+}
