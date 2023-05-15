@@ -28,7 +28,7 @@ export default function IntroductionComponent(props) {
                                     Hi, I'm <span className="homeHeadTextHighlight">Aditya Kapoor</span>
                                 </div>
                                 <div className="homeHeadDeignationText">
-                                    <span className="homeHeadTextHighlight">Sofware</span> Engineer
+                                    <span className="homeHeadTextHighlight">Software</span> Engineer
                                 </div>
                                 <div className="homeHeadDescriptionText">
                                     {/* Inquisitive Programming enthusiast with profound Management skills. */}
