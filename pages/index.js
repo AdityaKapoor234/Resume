@@ -205,6 +205,7 @@ export default function Home() {
   const [theme, setTheme] = useState(false);
 
   const [experienceYears, setExperienceYears] = useState();
+  const [experienceMonths, setExperienceMonths] = useState();
 
   const [skills, setSkills] = useState([
     {
@@ -471,8 +472,12 @@ export default function Home() {
     let date = new Date();
     date.setMinutes(date.getMinutes() - date.getTimezoneOffset());
     let exprience = parseInt(date.getFullYear()) - 2022;
+    let exprienceMonth = parseInt(date.getMonth());
+
+    console.log(exprienceMonth,"exprienceMonth")
 
     setExperienceYears(exprience);
+    setExperienceMonths(exprienceMonth);
 
     if (localStorage.getItem("AdityaKapoorPortfolioTheme") === "Dark") {
       setTheme(true);
@@ -502,6 +507,7 @@ export default function Home() {
           <Introduction
             layoutTheme={theme}
             profileExperienceYears={experienceYears}
+            profileExperienceMonths={experienceMonths}
           />
           <AboutUs
             layoutTheme={theme}

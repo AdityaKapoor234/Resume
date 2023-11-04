@@ -8,12 +8,13 @@ export default function IntroductionComponent(props) {
     const [theme, setTheme] = useState(props?.layoutTheme);
 
     const [experienceYears, setExperienceYears] = useState(props?.profileExperienceYears);
-
+    const [experienceMonths, setExperienceMonths] = useState(props?.profileExperienceMonths);
 
     useEffect(() => {
         setTheme(props?.layoutTheme);
 
         setExperienceYears(props?.profileExperienceYears);
+        setExperienceMonths(props?.profileExperienceMonths);
     }, [props]);
 
 
@@ -32,7 +33,16 @@ export default function IntroductionComponent(props) {
                                 </div>
                                 <div className="homeHeadDescriptionText">
                                     {/* Inquisitive Programming enthusiast with profound Management skills. */}
-                                    Software Developer with {experienceYears}+ {experienceYears === 1 ? "year" : "years"} of experience in software development. Curious individual who loves challenges and getting things done. Self-disciplined, driven with strong time management and prioritization abilities. Skilled in finding creative solutions.
+                                    Software Developer with{" "}
+                                    {experienceMonths !== 0 && experienceMonths !== 12 ?
+                                    <>
+                                    {experienceYears} {experienceYears === 1 ? "year" : "years"}, {experienceMonths} {experienceMonths === 1 ? "month " : "months "}
+                                    </> :
+                                    <>
+                                    {experienceYears}+ {experienceYears === 1 ? "year" : "years"}
+                                    </>}
+                                    of experience in software development. Curious individual who loves challenges and getting things done. Self-disciplined, driven with strong time management and prioritization abilities. Skilled in finding creative solutions.
+                                    {/* Software Developer with {experienceYears}+ {experienceYears === 1 ? "year" : "years"} of experience in software development. Curious individual who loves challenges and getting things done. Self-disciplined, driven with strong time management and prioritization abilities. Skilled in finding creative solutions. */}
                                 </div>
                                 <div className="homeResumeButton point-text" onClick={() => { window.open("/resume/aditya_kapoor_resume.pdf") }}>
                                     Resume
