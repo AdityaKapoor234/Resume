@@ -474,8 +474,6 @@ export default function Home() {
     let exprience = parseInt(date.getFullYear()) - 2022;
     let exprienceMonth = parseInt(date.getMonth());
 
-    console.log(exprienceMonth,"exprienceMonth")
-
     setExperienceYears(exprience);
     setExperienceMonths(exprienceMonth);
 
