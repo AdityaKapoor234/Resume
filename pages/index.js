@@ -221,15 +221,15 @@ export default function Home() {
       viewMore: false,
     },
     // {
-    //   logo: "/images/nodejs.png",
-    //   skill: "Node.JS",
-    //   description: "Node.js is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more. Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript Engine, and executes JavaScript code outside a web browser.",
-    //   viewMore: false,
-    // },
-    // {
     //   logo: "/images/java-spring-boot.png",
     //   skill: "Java Spring Boot",
     //   description: "Java Spring Boot (Spring Boot) is a tool that makes developing web application and microservices with Spring Framework faster and easier through three core capabilities: Autoconfiguration. An opinionated approach to configuration. The ability to create standalone applications.",
+    //   viewMore: false,
+    // },
+    // {
+    //   logo: "/images/nodejs.png",
+    //   skill: "Node.JS",
+    //   description: "Node.js is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more. Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript Engine, and executes JavaScript code outside a web browser.",
     //   viewMore: false,
     // },
     // {
