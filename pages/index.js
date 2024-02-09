@@ -220,22 +220,46 @@ export default function Home() {
       description: "Next.js is a front-end framework that makes it easy to build fast websites with React—which is a free and open-source front-end JavaScript library for building user interfaces based on UI components.",
       viewMore: false,
     },
-    {
-      logo: "/images/nodejs.png",
-      skill: "Node.JS",
-      description: "Node.js is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more. Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript Engine, and executes JavaScript code outside a web browser.",
-      viewMore: false,
-    },
-    {
-      logo: "/images/java.png",
-      skill: "Java",
-      description: "Java is a widely-used programming language for coding web applications. It has been a popular choice among developers for over two decades, with millions of Java applications in use today. Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself. It is a fast, secure, reliable programming language for coding everything from mobile apps and enterprise software to big data applications and server-side technologies.",
-      viewMore: false,
-    },
+    // {
+    //   logo: "/images/nodejs.png",
+    //   skill: "Node.JS",
+    //   description: "Node.js is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more. Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript Engine, and executes JavaScript code outside a web browser.",
+    //   viewMore: false,
+    // },
+    // {
+    //   logo: "/images/java-spring-boot.png",
+    //   skill: "Java Spring Boot",
+    //   description: "Java Spring Boot (Spring Boot) is a tool that makes developing web application and microservices with Spring Framework faster and easier through three core capabilities: Autoconfiguration. An opinionated approach to configuration. The ability to create standalone applications.",
+    //   viewMore: false,
+    // },
+    // {
+    //   logo: "/images/mongodb.png",
+    //   skill: "MongoDB",
+    //   description: "MongoDB is a source-available, cross-platform, document-oriented database program. Classified as a NoSQL database product, MongoDB utilizes JSON-like documents with optional schemas.",
+    //   viewMore: false,
+    // },
+    // {
+    //   logo: "/images/express-js.png",
+    //   skill: "Express.js",
+    //   description: "Express.js, or simply Express, is a back end web application framework for building RESTful APIs with Node.js, released as free and open-source software under the MIT License. It is designed for building web applications and APIs. It has been called the de facto standard server framework for Node.js.",
+    //   viewMore: false,
+    // },
+    // {
+    //   logo: "/images/java.png",
+    //   skill: "Java",
+    //   description: "Java is a widely-used programming language for coding web applications. It has been a popular choice among developers for over two decades, with millions of Java applications in use today. Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself. It is a fast, secure, reliable programming language for coding everything from mobile apps and enterprise software to big data applications and server-side technologies.",
+    //   viewMore: false,
+    // },
     {
       logo: "/images/javascript.png",
       skill: "Java Script",
       description: "JavaScript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It is an interpreted programming language with object-oriented capabilities.",
+      viewMore: false,
+    },
+    {
+      logo: "/images/typescript.png",
+      skill: "TypeScript",
+      description: "TypeScript is a free and open-source high-level programming language developed by Microsoft that adds static typing with optional type annotations to JavaScript. It is designed for the development of large applications and transpiles to JavaScript.",
       viewMore: false,
     },
     {
@@ -244,12 +268,12 @@ export default function Home() {
       description: "Object-oriented programming is based on the concept of objects. In object-oriented programming data structures, or objects are defined, each with its own properties or attributes. Each object can also contain its own procedures or methods. Software is designed by using objects that interact with one another.",
       viewMore: false,
     },
-    {
-      logo: "/images/c++.png",
-      skill: "C/C++",
-      description: "C++ is a high-level general-purpose programming language created by Danish computer scientist Bjarne Stroustrup and first released in 1985 as an extension of the C programming language, or C with Classes.",
-      viewMore: false,
-    },
+    // {
+    //   logo: "/images/c++.png",
+    //   skill: "C/C++",
+    //   description: "C++ is a high-level general-purpose programming language created by Danish computer scientist Bjarne Stroustrup and first released in 1985 as an extension of the C programming language, or C with Classes.",
+    //   viewMore: false,
+    // },
     {
       logo: "/images/git.png",
       skill: "Git",
@@ -298,10 +322,22 @@ export default function Home() {
       description: "A data structure is a named location that can be used to store and organize data. And, an algorithm is a collection of steps to solve a particular problem. Learning data structures and algorithms allow us to write efficient and optimized computer programs.",
       viewMore: false,
     },
+    // {
+    //   logo: "/images/python.png",
+    //   skill: "Python",
+    //   description: "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.",
+    //   viewMore: false,
+    // },
     {
-      logo: "/images/python.png",
-      skill: "Python",
-      description: "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.",
+      logo: "/images/ajax.png",
+      skill: "AJAX",
+      description: "Ajax is a set of web development techniques that uses various web technologies on the client-side to create asynchronous web applications. With Ajax, web applications can send and retrieve data from a server asynchronously without interfering with the display and behaviour of the existing page.",
+      viewMore: false,
+    },
+    {
+      logo: "/images/j-query.png",
+      skill: "jQuery",
+      description: "jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animations, and Ajax. It is free, open-source software using the permissive MIT License.",
       viewMore: false,
     },
   ]);
@@ -309,55 +345,70 @@ export default function Home() {
     {
       degree: "High School (10+2)",
       description: "<p>Universal Public School, Preet Vihar, Delhi-110092<br />Subject: Commerce with Maths</p>",
-      timePeriod: "2014-15"
+      timePeriod: "2014-15",
+      certificate: "",
     },
     {
       degree: "B.Com",
       description: "<p>Delhi University<br />Specialization Subject: Computer Applications</p>",
-      timePeriod: "2015-18"
+      timePeriod: "2015-18",
+      certificate: "",
     },
     {
       degree: "MCA",
       description: "<p>Galgotias University, Greater Noida<br />Specialization Subject: Software Development<br/>First Class with Distinction (9.07 CGPA)</p>",
-      timePeriod: "2019-22"
+      timePeriod: "2019-22",
+      certificate: "/certificates/degree/MCA_Degree.pdf",
     },
   ]);
   const [certification, setCertification] = useState([
     {
       degree: "DOEACC 'O' Level",
       description: "<p>National Institute of Electronics & Information Technology (NIELIT)<br />First Class (6.8 CGPA)</p>",
-      timePeriod: "2015-16"
+      timePeriod: "2015-16",
+      certificate: "",
     },
     {
       degree: "DOEACC 'A' Level",
       description: "<p>National Institute of Electronics & Information Technology (NIELIT)<br />First Class (6.8 CGPA)</p>",
-      timePeriod: "2017-18"
+      timePeriod: "2017-18",
+      certificate: "",
     },
     {
       degree: "IoT (Internet of Things)",
       description: "<p>National Programme on Technology Enhanced Learning (NPTEL)<br />First Class with Distinction (98%)</p>",
-      timePeriod: "2017-18"
+      timePeriod: "2020",
+      certificate: "/certificates/certifications/NPTEL_IoT.jpg",
+    },
+    {
+      degree: "Front End | Full Stack Development",
+      description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
+      timePeriod: "2024",
+      certificate: "/certificates/certifications/Bootcamp-Front_End-Full_Stack_Development-Excellence.pdf",
     },
   ]);
   const [honors, setHonors] = useState([
     {
-      award: "Gold Medal in PG (MCA)",
-      description: "<p>Galgotias University, Greater Noida<br />Highest CGPA Holder in complete batch of MCA (2019-22) as well as BCA+MCA (2017-22)<br/>First Class with Distinction (9.07 CGPA)</p>",
+      award: "Silver Medal in PG (MCA)",
+      description: "<p>Galgotias University, Greater Noida<br />Second Highest CGPA Holder in complete batch of MCA (2019-22) as well as BCA+MCA (2017-22)<br/>First Class with Distinction (9.07 CGPA)</p>",
       timePeriod: "2019-22",
+      certificate: "/certificates/honors/MCA_Silver_Medal.pdf",
     },
   ]);
   const [achievements, setAchievements] = useState([
     // {
     //   achievement: "Abcd",
     //   description: "<p>National Programme on Technology Enhanced Learning (NPTEL)<br />First Class with Distinction (98%)</p>",
-    //   timePeriod: "2023"
+    //   timePeriod: "2023",
+    //   certificate: "",
     // },
   ]);
   const [publication, setPublication] = useState([
     {
       publication: "Traffic Management using Cloud Computing",
       description: "<p>Jaipur National University<br />Published & Presented a Research Paper in 5th International Conference on Innovation Advancements in Engineering & Technology (IAET-2022) in association with All India Council for Technical Education</p>",
-      timePeriod: "2022"
+      timePeriod: "2022",
+      certificate: "",
     },
   ]);
   const [workExperience, setWorkExperience] = useState([
@@ -371,6 +422,7 @@ export default function Home() {
       designation: "Software Engineer",
       timePeriod: "Jan 2022 - Present",
       work_experience_description: "<p><ul><li>Designed and developed Responsive Web Applications on the basis of client requirements using React JS, Next JS & Node JS</li><li>Assembled Web Application's back-end through Flask API (Python) by using Node JS</li><li>Streamlined Functionality to the Web Applications by using Java Script, JQuery, AJAX</li><li>Interpreted Client’s Requirement into Digital Solutions and delivering the Effective & Efficient Results into the Project By Communicating with the Client Directly</li><li>Integrated Payment Gateways on Web Applications for money transfers</li><li>Built Email Templates for Web Applications for providing Information about Customers & Clients Orders, Enquiries & Required Data</li><li>Coached interns and trained them on live company projects.</li><li>Upgraded existing applications to add new functionalities and remove bugs.</li><li>Coordinated with team members on live projects and got complete understanding of live company projects</li></ul></p>",
+      work_experience_letter: "",
     },
   ]);
   const [companyProjects, setCompanyProjects] = useState([
@@ -390,6 +442,7 @@ export default function Home() {
           logo: "/images/fitcart-logo.png",
           timePeriod: "Jan 2022 - Nov 2022",
           description: "Implemented a full stack web application in which a customers can purchase products and subscribe to the services of company like personal diet plan, exercise schedules, queries, etc",
+          highlightProject: true,
         },
         {
           name: "FitCart Web Application (Admin Side)",
@@ -397,6 +450,7 @@ export default function Home() {
           logo: "/images/fitcart-logo.png",
           timePeriod: "Jan 2022 - Nov 2022",
           description: "Implemented a full stack web application in which a company members can manage sales and purchase of products and manage their customers by providing them personal training services to the subscribed customers",
+          highlightProject: true,
         },
         {
           name: "FidGuru Web Application (Customer Side)",
@@ -404,6 +458,7 @@ export default function Home() {
           logo: "/images/fidguru-logo.png",
           timePeriod: "Nov 2022 - Feb 2023",
           description: "Implemented a full stack web application in which a users can find jobs by building their resume in both written as well as video format, can apply for jobs, and can schedule their interviews as well as can give real time online test to certify his/her skills to the interviewer",
+          highlightProject: true,
         },
         {
           name: "FidGuru Web Application (Enterprise Side)",
@@ -411,6 +466,7 @@ export default function Home() {
           logo: "/images/fidguru-logo.png",
           timePeriod: "Nov 2022 - Feb 2023",
           description: "Implemented a full stack web application in which a users i.e. companies can post jobs,view candidates profile, take real time online exams to certify their skills, shortlist deserving candidates, schedule interviews with the candidates, view their resume in both written as well as video format and hire them for their own company",
+          highlightProject: true,
         },
         {
           name: "FidGuru Web Application (Admin Side)",
@@ -418,6 +474,7 @@ export default function Home() {
           logo: "/images/fidguru-logo.png",
           timePeriod: "Nov 2022 - Feb 2023",
           description: "Implemented a full stack web application in which a company members can manage a job finding application for user services like managing posts for vacancies, creating question bank for particular topics, managing a test creating system to conduct real time test for users, managing user profiles and their video resumes, conducting online interviews and managing their different notifications for vacancies, interviews, etc",
+          highlightProject: true,
         },
       ],
     },
@@ -430,6 +487,8 @@ export default function Home() {
       logo: "",
       timePeriod: "Jan 2022 - Feb 2022",
       description: "Implemented a Web Application in HTML5, CSS3, Java Script & AJAX with Rest API Integration in which user can see the information about all the countries in the world, search them by their names, open their maps, view their information like their population, currency, languages, neighbour countries, capital, time zone, etc",
+      highlightProject: true,
+      type: "html_css_javascript",
     },
     {
       name: "To Do List",
@@ -438,6 +497,138 @@ export default function Home() {
       logo: "",
       timePeriod: "Jan 2022 - Feb 2022",
       description: "Implemented a Web Application in HTML5, CSS3 & Java Script in which user can create a to do list, put the particular items into 3 different categories, delete a particular item separately or by selecting multiple items together or delete the complete list all at once",
+      highlightProject: false,
+      type: "html_css_javascript",
+    },
+    {
+      name: "Photogram",
+      link: "https://gilded-sundae-6c7d6e.netlify.app/",
+      gitLink: "https://github.com/AdityaKapoor234/photogram",
+      logo: "",
+      timePeriod: "Jan 2024",
+      description: "Implemented a Web Application in HTML5, CSS3 & Java Script in which user can view already existing post and create new posts also",
+      highlightProject: true,
+      type: "html_css_javascript",
+    },
+    {
+      name: "Quiz Game",
+      link: "https://coruscating-truffle-0aa211.netlify.app/",
+      gitLink: "https://github.com/AdityaKapoor234/quiz_game",
+      logo: "",
+      timePeriod: "Jan 2024",
+      description: "Implemented a Web Application in HTML5, CSS3 & Java Script in which user can play a quiz game and earn points (score)",
+      highlightProject: true,
+      type: "html_css_javascript",
+    },
+    {
+      name: "Modifying Blog Page",
+      link: "https://moonlit-quokka-7ca747.netlify.app/",
+      gitLink: "https://github.com/AdityaKapoor234/blog_up_down_delete",
+      logo: "",
+      timePeriod: "Jan 2024",
+      description: "Implemented a Web Application in HTML5, CSS3 & Java Script in which user can read existing blogs and move them up down or delete them",
+      highlightProject: true,
+      type: "html_css_javascript",
+    },
+    {
+      name: "Seat Booking",
+      link: "https://singular-custard-a0b206.netlify.app/",
+      gitLink: "https://github.com/AdityaKapoor234/seat_booking_app",
+      logo: "",
+      timePeriod: "Jan 2024",
+      description: "Implemented a Web Application in HTML5, CSS3 & Java Script in which user can select their seats for a particular movie to watch a particular film and also calculate the bill for their seats.",
+      highlightProject: true,
+      type: "html_css_javascript",
+    },
+    // {
+    //   name: "Instrument Player",
+    //   link: "",
+    //   gitLink: "",
+    //   logo: "",
+    //   timePeriod: "Jan 2022 - Feb 2022",
+    //   description: "",
+    //   highlightProject: false,
+    //   type: "html_css_javascript",
+    // },
+    {
+      name: "Alarm Clock",
+      link: "https://capable-banoffee-98cbca.netlify.app/",
+      gitLink: "https://github.com/AdityaKapoor234/alarm-clock",
+      logo: "",
+      timePeriod: "Jan 2024",
+      description: "Implemented a Web Application in HTML5, CSS3 & Java Script in which user can check time and set many alarms",
+      highlightProject: true,
+      type: "html_css_javascript",
+    },
+    {
+      name: "Typing Speed Test",
+      link: "https://curious-cactus-8c6e45.netlify.app/",
+      gitLink: "https://github.com/AdityaKapoor234/speed_typing_test",
+      logo: "",
+      timePeriod: "Jan 2024",
+      description: "Implemented a Web Application in HTML5, CSS3 & Java Script in which user can take a typing test and check his/her typing speed & accuracy",
+      highlightProject: true,
+      type: "html_css_javascript",
+    },
+    // {
+    //   name: "Movie Recommendation",
+    //   link: "",
+    //   gitLink: "",
+    //   logo: "",
+    //   timePeriod: "Jan 2022 - Feb 2022",
+    //   description: "",
+    //   highlightProject: false,
+    //   type: "html_css_javascript",
+    // },
+    // {
+    //   name: "Pokemon Game",
+    //   link: "",
+    //   gitLink: "",
+    //   logo: "",
+    //   timePeriod: "Jan 2022 - Feb 2022",
+    //   description: "",
+    //   highlightProject: false,
+    //   type: "html_css_javascript",
+    // },
+    // {
+    //   name: "E-Commerce Website",
+    //   link: "",
+    //   gitLink: "",
+    //   logo: "",
+    //   timePeriod: "Jan 2022 - Feb 2022",
+    //   description: "",
+    //   highlightProject: false,
+    //   type: "html_css_javascript",
+    // },
+    {
+      name: "Music Player App",
+      link: "https://melodious-halva-37904a.netlify.app/",
+      gitLink: "https://github.com/AdityaKapoor234/music_player_capstone_project",
+      logo: "",
+      timePeriod: "Jan 2024",
+      description: "Implemented a Web Application in HTML5, CSS3 & Java Script in which user can listen various songs, search those songs & playlists, and make their own playlist also to listen those songs in particular order mentioned by the user.",
+      highlightProject: true,
+      type: "html_css_javascript",
+    },
+    {
+      name: "Music Player App (UI)",
+      link: "https://gregarious-souffle-97f0e1.netlify.app/",
+      gitLink: "https://github.com/AdityaKapoor234/music_player_ui_capstone_project",
+      logo: "",
+      timePeriod: "Jan 2024",
+      description: "Implemented a Web Application in HTML5 & CSS3 in which user can view a UI for Music Player.",
+      highlightProject: false,
+      type: "html_css",
+    },
+    {
+      name: "Stock Market Analysis",
+      link: "https://eloquent-marzipan-f5a068.netlify.app/",
+      gitLink: "https://github.com/AdityaKapoor234/stock_market_analysis_capstone_project",
+      logo: "",
+      timePeriod: "Feb 2024",
+      description: "Implemented a Web Application in HTML5, CSS3, Java Script & AJAX with Rest API Integration in which user keep a watch on various different stocks & their performance over different time periods and know about the Company's Description, Profit & Book Value over Pictorial Representation (Chart).",
+      highlightProject: true,
+      type: "html_css_javascript",
     },
     {
       name: "JavaScript UI with SideBar Menu",
@@ -446,6 +637,8 @@ export default function Home() {
       logo: "",
       timePeriod: "Jan 2022 - Feb 2022",
       description: "Implemented a Web Application UI in HTML5 & CSS3 which consist of a simple UI with a Contact Us Form & Side Bar Menu",
+      highlightProject: false,
+      type: "html_css",
     },
   ]);
 

@@ -3,6 +3,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useState, useEffect } from "react";
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
+import LinkIcon from '@mui/icons-material/Link';
 
 export default function QualificationComponent(props) {
     const [theme, setTheme] = useState(props?.layoutTheme);
@@ -96,8 +97,14 @@ export default function QualificationComponent(props) {
                                                                 <div className="graduationYear">
                                                                     {elem?.timePeriod}
                                                                 </div>
-                                                                <div className="graduationDegree">
-                                                                    {elem?.degree}
+                                                                <div className="graduationDegree d-flex flex-wrap align-items-center justify-content-between">
+                                                                    <div>{elem?.degree}</div>
+                                                                    <div>
+                                                                        {
+                                                                            elem?.certificate &&
+                                                                            <LinkIcon className="point-text" onClick={() => window.open(elem?.certificate)} />
+                                                                        }
+                                                                    </div>
                                                                 </div>
                                                                 <div
                                                                     className="graduationDegreeDescription"
@@ -157,8 +164,14 @@ export default function QualificationComponent(props) {
                                                                 <div className="graduationYear">
                                                                     {elem?.timePeriod}
                                                                 </div>
-                                                                <div className="graduationDegree">
-                                                                    {elem?.degree}
+                                                                <div className="graduationDegree d-flex flex-wrap align-items-center justify-content-between">
+                                                                    <div>{elem?.degree}</div>
+                                                                    <div>
+                                                                        {
+                                                                            elem?.certificate &&
+                                                                            <LinkIcon className="point-text" onClick={() => window.open(elem?.certificate)} />
+                                                                        }
+                                                                    </div>
                                                                 </div>
                                                                 <div
                                                                     className="graduationDegreeDescription"
@@ -212,8 +225,14 @@ export default function QualificationComponent(props) {
                                                                 <div className="graduationYear">
                                                                     {elem?.timePeriod}
                                                                 </div>
-                                                                <div className="graduationDegree">
-                                                                    {elem?.award}
+                                                                <div className="graduationDegree d-flex flex-wrap align-items-center justify-content-between">
+                                                                    <div>{elem?.award}</div>
+                                                                    <div>
+                                                                        {
+                                                                            elem?.certificate &&
+                                                                            <LinkIcon className="point-text" onClick={() => window.open(elem?.certificate)} />
+                                                                        }
+                                                                    </div>
                                                                 </div>
                                                                 <div
                                                                     className="graduationDegreeDescription"
@@ -260,8 +279,14 @@ export default function QualificationComponent(props) {
                                                                 <div className="graduationYear">
                                                                     {elem?.timePeriod}
                                                                 </div>
-                                                                <div className="graduationDegree">
-                                                                    {elem?.achievement}
+                                                                <div className="graduationDegree d-flex flex-wrap align-items-center justify-content-between">
+                                                                    <div>{elem?.achievement}</div>
+                                                                    <div>
+                                                                        {
+                                                                            elem?.certificate &&
+                                                                            <LinkIcon className="point-text" onClick={() => window.open(elem?.certificate)} />
+                                                                        }
+                                                                    </div>
                                                                 </div>
                                                                 <div
                                                                     className="graduationDegreeDescription"
@@ -308,8 +333,14 @@ export default function QualificationComponent(props) {
                                                                 <div className="graduationYear">
                                                                     {elem?.timePeriod}
                                                                 </div>
-                                                                <div className="graduationDegree">
-                                                                    {elem?.publication}
+                                                                <div className="graduationDegree d-flex flex-wrap align-items-center justify-content-between">
+                                                                    <div>{elem?.publication}</div>
+                                                                    <div>
+                                                                        {
+                                                                            elem?.certificate &&
+                                                                            <LinkIcon className="point-text" onClick={() => window.open(elem?.certificate)} />
+                                                                        }
+                                                                    </div>
                                                                 </div>
                                                                 <div
                                                                     className="graduationDegreeDescription"

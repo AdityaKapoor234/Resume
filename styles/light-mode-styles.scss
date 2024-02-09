@@ -735,6 +735,8 @@
             margin-bottom: 1rem;
             font-weight: 500;
             display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
             align-items: center;
             position: relative;
 
@@ -909,6 +911,194 @@
             }
         }
 
+    }
+
+    .projectsPopUpBox {
+        color: $clr-light-theme-blue100;
+
+        .projectsSubHead {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+
+            .projectsSubHeadImg {
+                height: 2.5rem;
+                width: auto;
+            }
+        }
+
+        .projectComapanyName {
+            color: $clr-light-theme-blue100;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 3rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .projectComapanyName:nth-child(1) {
+            margin-top: 0px;
+        }
+
+        .projectComapanyLogo {
+            height: 2rem;
+            width: auto;
+        }
+
+        .projectComapanyDescription {
+            color: $clr-light-theme-blue100;
+            font-size: 0.8rem;
+            font-weight: 400;
+            margin-bottom: 0.7rem;
+        }
+
+        .projectCard {
+            background-color: $clr-light-theme-white100;
+            border-radius: 15px;
+            box-shadow: 7px 7px 5px $clr-light-theme-blue100;
+            border: 1px solid $clr-light-theme-blue200;
+
+            padding-top: 2rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            padding-bottom: 2rem;
+
+            height: 100%;
+            width: 85%;
+
+            margin: auto;
+            margin-top: 3rem;
+
+
+            transition: all 0.5s ease;
+
+
+            .projectName {
+                color: $clr-light-theme-orange100;
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin-bottom: 0.1rem;
+                text-decoration: underline;
+            }
+
+            .projectLogoDiv {
+                width: fit-content;
+                margin: auto;
+                margin-bottom: 1.5rem;
+            }
+
+            .projectLogo {
+                height: 3.24rem;
+                width: auto;
+            }
+
+            .projectDescription {
+                color: $clr-light-theme-blue100;
+                font-size: 1rem;
+                font-weight: 600;
+                margin-bottom: 0.4rem;
+            }
+
+            .projectIcons {
+                font-size: 0.8rem;
+                color: $clr-light-theme-black100;
+            }
+
+            .projectTimePeriod {
+                color: $clr-light-theme-black100;
+                font-size: 0.8rem;
+
+                display: flex;
+                align-items: center;
+                justify-content: right;
+            }
+
+            .projectLinkRow {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .projectLink {
+                color: $clr-light-theme-blue100;
+                font-size: 1rem;
+                font-weight: 400;
+                margin-bottom: 0.1rem;
+                text-decoration: underline;
+
+                width: fit-content;
+
+                transition: all 0.5s ease;
+
+                display: flex;
+                align-items: center;
+
+                .projectLinkIcon {
+                    color: $clr-light-theme-blue100;
+                    font-size: 1.5rem;
+
+                    transition: all 0.5s ease;
+                }
+
+                .gitLinkIcon {
+                    color: $clr-light-theme-blue100;
+                    font-size: 1.2rem;
+
+                    transition: all 0.5s ease;
+                }
+            }
+
+            .projectLink:hover {
+                color: $clr-light-theme-orange100;
+
+                transition: all 0.5s ease;
+
+                .projectLinkIcon {
+                    color: $clr-light-theme-orange100;
+                    font-size: 1.5rem;
+
+                    transition: all 0.5s ease;
+                }
+
+                .gitLinkIcon {
+                    color: $clr-light-theme-orange100;
+                    font-size: 1.2rem;
+
+                    transition: all 0.5s ease;
+                }
+            }
+
+        }
+
+        .projectCard:hover {
+            background-color: $clr-light-theme-gray100;
+            box-shadow: 9px 9px 7px $clr-light-theme-blue100;
+
+            transform: scale(1.1);
+            transition: all 0.5s ease;
+
+            .projectLink {
+                color: $clr-light-theme-orange100;
+
+                transition: all 0.5s ease;
+
+                .projectLinkIcon {
+                    color: $clr-light-theme-orange100;
+                    font-size: 1.5rem;
+
+                    transition: all 0.5s ease;
+                }
+
+                .gitLinkIcon {
+                    color: $clr-light-theme-orange100;
+                    font-size: 1.2rem;
+
+                    transition: all 0.5s ease;
+                }
+            }
+        }
     }
 
     .contact {
@@ -1483,6 +1673,15 @@
             }
         }
 
+        .projectsPopUpBox {
+            .projectCard {
+                padding-top: 2rem;
+                padding-left: 3rem;
+                padding-right: 3rem;
+                padding-bottom: 2rem;
+            }
+        }    
+
         .contact {
             padding: 5rem 3.24rem;
         }
@@ -1671,6 +1870,19 @@
 
             clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 97.5%, 0 100%);
 
+            .projectCard {
+                padding-top: 2rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                padding-bottom: 2rem;
+
+                .projectName {
+                    font-size: 1.234rem;
+                }
+            }
+        }
+
+        .projectsPopUpBox {
             .projectCard {
                 padding-top: 2rem;
                 padding-left: 2rem;
@@ -1971,6 +2183,93 @@
 
                 .projectDescription {
                     font-size: 0.8rem;
+                }
+
+                .projectIcons {
+                    font-size: 0.7rem;
+                }
+
+                .projectTimePeriod {
+                    font-size: 0.7rem;
+                }
+
+                .projectLink {
+                    font-size: 0.8rem;
+
+                    .projectLinkIcon {
+                        font-size: 1rem;
+                    }
+
+                    .gitLinkIcon {
+                        font-size: 1rem;
+                    }
+                }
+
+                .projectLink:hover {
+
+                    .projectLinkIcon {
+                        font-size: 1rem;
+                    }
+
+                    .gitLinkIcon {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .projectCard:hover {
+
+                .projectLink {
+
+                    .projectLinkIcon {
+                        font-size: 1rem;
+                    }
+
+                    .gitLinkIcon {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .projectsPopUpBox {
+            .projectsSubHead {
+                font-size: 1.2rem !important;
+
+                .projectsSubHeadImg {
+                    height: 1.2rem;
+                    width: auto;
+                }
+            }
+
+            .projectComapanyName {
+                font-size: 1.2rem;
+            }
+
+            .projectComapanyLogo {
+                height: 1.7rem;
+                width: auto;
+            }
+
+            .projectCard {
+                padding-top: 1rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                padding-bottom: 1rem;
+
+                width: 100%;
+
+                .projectName {
+                    font-size: 1rem;
+                }
+
+                .projectLogo {
+                    height: 2.34rem;
+                    width: auto;
+                }
+
+                .projectDescription {
+                    font-size: 0.7rem;
                 }
 
                 .projectIcons {
