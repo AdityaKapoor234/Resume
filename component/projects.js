@@ -477,6 +477,75 @@ export default function ProjectComponent(props) {
                                                 )
                                             })
                                         }
+                                        {
+                                            personalProjects?.filter((elem) => elem?.type === "html_css_javascript_api")?.length > 0 &&
+                                            <div className="projectComapanyName">
+                                                &#x2714;&nbsp;&nbsp;HTML, CSS, Java Script & API Integration Projects
+                                            </div>
+                                        }
+                                        {
+                                            personalProjects?.filter((elem) => elem?.type === "html_css_javascript_api")?.map((item) => {
+                                                return (
+                                                    <div className="w-100 mb-5">
+                                                        <div className="projectCard">
+                                                            <div className="projectLogoDiv point-text" onClick={() => { window.open(item?.link) }}>
+                                                                {
+                                                                    item?.logo ?
+                                                                        <img src={item?.logo} alt="" className="projectLogo" />
+                                                                        :
+                                                                        <></>
+                                                                }
+                                                            </div>
+                                                            <div className="row">
+                                                                <div className="col-lg-9 col-12">
+                                                                    <div className="projectName point-text" onClick={() => { window.open(item?.link) }}>
+                                                                        {item?.name}
+                                                                    </div>
+                                                                </div>
+                                                                <div className="col-lg-3 col-12 d-flex align-items-center justify-content-end">
+                                                                    <div className="projectTimePeriod">
+                                                                        <CalendarMonthIcon className="projectIcons" />&nbsp;
+                                                                        {item?.timePeriod}
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="projectDescription">
+                                                                {item?.description ? item?.description : ""}
+                                                            </div>
+                                                            <div className="projectLinkRow">
+                                                                {
+                                                                    item?.link ?
+                                                                        <span className="projectLink point-text" onClick={() => { window.open(item?.link) }}>
+                                                                            <LinkIcon className="projectLinkIcon" />
+                                                                            Project Link
+                                                                        </span>
+                                                                        :
+                                                                        <></>
+                                                                }
+                                                                {
+                                                                    item?.link && item?.gitLink ?
+                                                                        <>
+                                                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                                                        </>
+                                                                        :
+                                                                        <></>
+                                                                }
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                                {
+                                                                    item?.gitLink ?
+                                                                        <span className="projectLink point-text" onClick={() => { window.open(item?.gitLink) }}>
+                                                                            <GitHubIcon className="gitLinkIcon" />
+                                                                            Git Link
+                                                                        </span>
+                                                                        :
+                                                                        <></>
+                                                                }
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                )
+                                            })
+                                        }
                                     </div>
                                 </div>
                             </main>

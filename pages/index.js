@@ -488,7 +488,7 @@ export default function Home() {
       timePeriod: "Jan 2022 - Feb 2022",
       description: "Implemented a Web Application in HTML5, CSS3, Java Script & AJAX with Rest API Integration in which user can see the information about all the countries in the world, search them by their names, open their maps, view their information like their population, currency, languages, neighbour countries, capital, time zone, etc",
       highlightProject: true,
-      type: "html_css_javascript",
+      type: "html_css_javascript_api",
     },
     {
       name: "To Do List",
@@ -628,7 +628,7 @@ export default function Home() {
       timePeriod: "Feb 2024",
       description: "Implemented a Web Application in HTML5, CSS3, Java Script & AJAX with Rest API Integration in which user keep a watch on various different stocks & their performance over different time periods and know about the Company's Description, Profit & Book Value over Pictorial Representation (Chart).",
       highlightProject: true,
-      type: "html_css_javascript",
+      type: "html_css_javascript_api",
     },
     {
       name: "JavaScript UI with SideBar Menu",
