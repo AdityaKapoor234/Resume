@@ -600,6 +600,16 @@ export default function Home() {
     //   highlightProject: false,
     //   type: "html_css_javascript",
     // },
+    // {
+    //   name: "Superhero Hunter",
+    //   link: "",
+    //   gitLink: "",
+    //   logo: "",
+    //   timePeriod: "Jan 2022 - Feb 2022",
+    //   description: "",
+    //   highlightProject: false,
+    //   type: "html_css_javascript",
+    // },
     {
       name: "Music Player App",
       link: "https://melodious-halva-37904a.netlify.app/",
