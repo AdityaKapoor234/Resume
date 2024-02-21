@@ -280,6 +280,12 @@ export default function Home() {
       description: "Git is a distributed version control system that tracks changes in any set of computer files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows.",
       viewMore: false,
     },
+    // {
+    //   logo: "/images/jira.png",
+    //   skill: "JIRA",
+    //   description: "Jira Software is an agile project management tool that supports any agile methodology and a proprietary product developed by Atlassian that allows bug tracking, issue tracking and agile project management. Jira is used by a large number of clients & users globally for project, time, requirements, task, bug, change, code, test, release, sprint management.",
+    //   viewMore: false,
+    // },
     {
       logo: "/images/bootstrap.png",
       skill: "Bootstrap",
