@@ -392,6 +392,54 @@ export default function Home() {
       timePeriod: "2024",
       certificate: "/certificates/certifications/Bootcamp-Front_End-Full_Stack_Development-Excellence.pdf",
     },
+    {
+      degree: "Introduction to Java",
+      description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
+      timePeriod: "2024",
+      certificate: "/certificates/certifications/Bootcamp-Introduction_To_Java-Excellence.pdf",
+    },
+    // {
+    //   degree: "Data Structures & Algorithms with Java",
+    //   description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
+    //   timePeriod: "2024",
+    //   certificate: "/certificates/certifications/Bootcamp-Data_Structures_And_Algorithm_With_Java-Excellence.pdf",
+    // },
+    // {
+    //   degree: "Java Web Development (Spring Boot)",
+    //   description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
+    //   timePeriod: "2024",
+    //   certificate: "/certificates/certifications/Bootcamp-Java_Web_Development-Spring_Boot-Excellence.pdf",
+    // },
+    // {
+    //   degree: "React | Full Stack Development",
+    //   description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
+    //   timePeriod: "2024",
+    //   certificate: "/certificates/certifications/Bootcamp-React-Full_Stack_Development-Excellence.pdf",
+    // },
+    // {
+    //   degree: "Aptitude Rounds",
+    //   description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
+    //   timePeriod: "2024",
+    //   certificate: "/certificates/certifications/Bootcamp-Aptitude_Rounds-Excellence.pdf",
+    // },
+    // {
+    //   degree: "Operating Systems",
+    //   description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
+    //   timePeriod: "2024",
+    //   certificate: "/certificates/certifications/Bootcamp-Operating_Systems-Excellence.pdf",
+    // },
+    // {
+    //   degree: "Database Management System (DBMS)",
+    //   description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
+    //   timePeriod: "2024",
+    //   certificate: "/certificates/certifications/Bootcamp-Database_Management_System_(DBMS)-Excellence.pdf",
+    // },
+    // {
+    //   degree: "System Design",
+    //   description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
+    //   timePeriod: "2024",
+    //   certificate: "/certificates/certifications/Bootcamp-System_Design-Excellence.pdf",
+    // },
   ]);
   const [honors, setHonors] = useState([
     {
