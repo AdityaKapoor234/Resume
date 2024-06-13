@@ -726,13 +726,16 @@ export default function Home() {
   }
 
   useEffect(() => {
-    let date = new Date();
-    date.setMinutes(date.getMinutes() - date.getTimezoneOffset());
-    let exprience = parseInt(date.getFullYear()) - 2022;
-    let exprienceMonth = parseInt(date.getMonth());
+    // let date = new Date();
+    // date.setMinutes(date.getMinutes() - date.getTimezoneOffset());
+    // let exprience = parseInt(date.getFullYear()) - 2022;
+    // let exprienceMonth = parseInt(date.getMonth());
 
-    setExperienceYears(exprience);
-    setExperienceMonths(exprienceMonth);
+    // setExperienceYears(exprience);
+    // setExperienceMonths(exprienceMonth);
+
+    setExperienceYears(2);
+    setExperienceMonths(0);
 
     if (localStorage.getItem("AdityaKapoorPortfolioTheme") === "Dark") {
       setTheme(true);
