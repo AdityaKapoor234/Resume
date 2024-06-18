@@ -474,7 +474,7 @@ export default function Home() {
       location: "Noida, Uttar Pradesh",
       work_type: "work_from_home",
       designation: "Software Engineer",
-      timePeriod: "Jan 2022 - Present",
+      timePeriod: "Jan 2022 - Jan 2024",
       work_experience_description: "<p><ul><li>Designed and developed Responsive Web Applications on the basis of client requirements using React JS, Next JS & Node JS</li><li>Assembled Web Application's back-end (APIs) by using Node JS</li><li>Streamlined Functionality to the Web Applications by using Java Script, JQuery, AJAX</li><li>Interpreted Client’s Requirement into Digital Solutions and delivering the Effective & Efficient Results into the Project By Communicating with the Client Directly</li><li>Integrated Payment Gateways on Web Applications for money transfers</li><li>Built Email Templates for Web Applications for providing Information about Customers & Clients Orders, Enquiries & Required Data</li><li>Coached interns and trained them on live company projects.</li><li>Upgraded existing applications to add new functionalities and remove bugs.</li><li>Coordinated with team members on live projects and got complete understanding of live company projects</li></ul></p>",
       work_experience_letter: "",
     },
