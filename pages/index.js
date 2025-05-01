@@ -410,12 +410,12 @@ export default function Home() {
     //   timePeriod: "2024",
     //   certificate: "/certificates/certifications/Bootcamp-Java_Web_Development-Spring_Boot-Excellence.pdf",
     // },
-    // {
-    //   degree: "React | Full Stack Development",
-    //   description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
-    //   timePeriod: "2024",
-    //   certificate: "/certificates/certifications/Bootcamp-React-Full_Stack_Development-Excellence.pdf",
-    // },
+    {
+      degree: "React | Full Stack Development",
+      description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
+      timePeriod: "2025",
+      certificate: "/certificates/certifications/Bootcamp-React-Full_Stack_Development-Excellence.pdf",
+    },
     // {
     //   degree: "Aptitude Rounds",
     //   description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
@@ -535,6 +535,26 @@ export default function Home() {
   ]);
   const [personalProjects, setPersonalProjects] = useState([
     {
+      name: "Busy Buy",
+      link: "https://bejewelled-marshmallow-143603.netlify.app/",
+      gitLink: "https://github.com/AdityaKapoor234/busy_buy_redux",
+      logo: "",
+      timePeriod: "May 2025",
+      description: "Busy Buy is a web application with full-featured online marketplace with real-time inventory management, personalized shopping experiences, and seamless user management flow. Built with React (Front-End), Firebase (Back-End) & Redux + Redux-Persist (State Management), it's key features are like Product Management, User Authentication, Shopping Cart, Order History, Dark/Light Mode",
+      highlightProject: true,
+      type: "react",
+    },
+    {
+      name: "Photofolios",
+      link: "https://gorgeous-chaja-459a66.netlify.app/",
+      gitLink: "https://github.com/AdityaKapoor234/photofolio_react",
+      logo: "",
+      timePeriod: "May 2025",
+      description: "PhotoFolio is a web application for organizing, viewing, and managing photo albums with a sleek dark/light mode interface. Built with React (Front-End) and Firebase (Back-End), it's key features are like Theme System, Album Management, Image Handling. ",
+      highlightProject: true,
+      type: "react",
+    },
+    {
       name: "World Countries Details",
       link: "https://naughty-mcclintock-3f26b0.netlify.app/",
       gitLink: "https://gitlab.com/AdityaKapoor234/assignment-3-24-jan-2022-country-details",
@@ -571,7 +591,7 @@ export default function Home() {
       logo: "",
       timePeriod: "Jan 2024",
       description: "Implemented a Web Application in HTML5, CSS3 & Java Script in which user can play a quiz game and earn points (score)",
-      highlightProject: true,
+      highlightProject: false,
       type: "html_css_javascript",
     },
     {
@@ -611,7 +631,7 @@ export default function Home() {
       logo: "",
       timePeriod: "Jan 2024",
       description: "Implemented a Web Application in HTML5, CSS3 & Java Script in which user can check time and set many alarms",
-      highlightProject: true,
+      highlightProject: false,
       type: "html_css_javascript",
     },
     {
