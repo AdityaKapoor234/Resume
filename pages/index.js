@@ -220,6 +220,12 @@ export default function Home() {
       description: "Next.js is a front-end framework that makes it easy to build fast websites with React—which is a free and open-source front-end JavaScript library for building user interfaces based on UI components.",
       viewMore: false,
     },
+    {
+      logo: "/images/redux.png",
+      skill: "Redux Toolkit",
+      description: "Redux Toolkit is primarily used to streamline and simplify Redux development by providing a more intuitive and efficient approach to managing application state. It combines several commonly used Redux packages, like Redux DevTools and Redux Thunk, into a single, well-defined library. This reduces boilerplate code and makes Redux more accessible for beginners and more productive for experienced developers.",
+      viewMore: false,
+    },
     // {
     //   logo: "/images/java-spring-boot.png",
     //   skill: "Java Spring Boot",
