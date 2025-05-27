@@ -376,7 +376,7 @@ export default function Home() {
       designation: "Software Engineer (Freelance)",
       timePeriod: "Feb 2024 - May 2025",
       work_experience_description: "<p><ul><li>Streamlined <b>Functionalities</b> to the Web Applications by using <b>JavaScript, jQuery, AJAX,</b> increasing usefulness by 65%</li><li>Built <b>Email Templates</b> for Web Applications for providing Information to Customers, increasing interactivity by 30%</li><li><b>Enhanced user experience</b> by designing responsive UIs, boosting mobile traffic by 35%</li><li><b>Interpreted Client’s Requirement into Digital Solutions</b> and delivering the Effective & Efficient Results into the Project By Communicating with the Client Directly</li></ul></p>",
-      work_experience_letter: "/experience_letter/Ammaiya_Aditya_kapoor_Reliving_letter.pdf",
+      work_experience_letter: "/experience_letter/Ammaiya_Service_Pvt_Ltd_Experince_Letter.pdf",
     },
     {
       company_name: "",
