@@ -88,6 +88,17 @@ export default function ExperienceComponent(props) {
                                                     </div>
                                                 </div>
                                             </div>
+                                            {
+                                                elem?.work_experience_letter &&
+                                                <div className="workExperienceComapnyName">
+                                                    <span className="point-text" onClick={() => window.open(elem?.work_experience_letter)}>
+                                                        Experince Letter
+                                                    </span>
+                                                </div>
+                                            }
+                                            <div>
+
+                                            </div>
                                             <div
                                                 className="workExperienceDescription"
                                                 dangerouslySetInnerHTML={{

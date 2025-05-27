@@ -3,28 +3,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useState, useEffect } from "react";
 import Head from 'next/head'
-import { toast } from "react-toastify";
-import Router from "next/router";
-import Image from 'next/image'
-import Avatar from '@mui/material/Avatar';
-import Switch from '@mui/material/Switch';
-import { styled } from '@mui/material/styles';
-import PhoneIcon from '@mui/icons-material/Phone';
-import EmailIcon from '@mui/icons-material/Email';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import HomeIcon from '@mui/icons-material/Home';
-import HomeWorkIcon from '@mui/icons-material/HomeWork';
-import Slider from "react-slick";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkIcon from '@mui/icons-material/Link';
-import MenuIcon from '@mui/icons-material/Menu';
-import Drawer from '@mui/material/Drawer';
-import CloseIcon from '@mui/icons-material/Close';
 
 import Layout from "../component/layout/layout";
 import Introduction from "../component/introduction";
@@ -34,120 +13,6 @@ import Qualification from "../component/qualifications";
 import Experience from "../component/experience";
 import Projects from "../component/projects";
 import Contact from "../component/contact";
-
-
-// const IOSSwitch = styled((props) => (
-//   <Switch
-//     focusVisibleClassName=".Mui-focusVisible"
-//     disableRipple
-//     {...props}
-//   />
-// ))(({ theme }) => ({
-//   width: 40,
-//   height: 20,
-//   padding: 0,
-//   '& .MuiSwitch-switchBase': {
-//     padding: 0,
-//     margin: 2,
-//     transitionDuration: '300ms',
-//     '&.Mui-checked': {
-//       transform: 'translateX(16px)',
-//       color: '#fff',
-//       '& + .MuiSwitch-track': {
-//         backgroundColor:
-//           theme.palette.mode === 'dark' ? '#2ECA45' : '#9152d1',
-//         opacity: 1,
-//         border: 0,
-//       },
-//       '&.Mui-disabled + .MuiSwitch-track': {
-//         opacity: 0.5,
-//       },
-//     },
-//     '&.Mui-focusVisible .MuiSwitch-thumb': {
-//       color: '#33cf4d',
-//       border: '6px solid #fff',
-//     },
-//     '&.Mui-disabled .MuiSwitch-thumb': {
-//       color:
-//         theme.palette.mode === 'light'
-//           ? theme.palette.grey[100]
-//           : theme.palette.grey[600],
-//     },
-//     '&.Mui-disabled + .MuiSwitch-track': {
-//       opacity: theme.palette.mode === 'light' ? 0.7 : 0.3,
-//     },
-//   },
-//   '& .MuiSwitch-thumb': {
-//     boxSizing: 'border-box',
-//     width: 16,
-//     height: 16,
-//   },
-//   '& .MuiSwitch-track': {
-//     borderRadius: 26 / 2,
-//     backgroundColor: theme.palette.mode === 'light' ? '#E9E9EA' : '#39393D',
-//     opacity: 1,
-//     transition: theme.transitions.create(['background-color'], {
-//       duration: 500,
-//     }),
-//   },
-// }));
-
-const IOSSwitch = styled((props) => (
-  <Switch
-    focusVisibleClassName=".Mui-focusVisible"
-    disableRipple
-    {...props}
-  />
-))(({ theme }) => ({
-  width: 62,
-  height: 34,
-  padding: 7,
-  '& .MuiSwitch-switchBase': {
-    margin: 1,
-    padding: 0,
-    transform: 'translateX(6px)',
-    '&.Mui-checked': {
-      color: '#fff',
-      transform: 'translateX(22px)',
-      '& .MuiSwitch-thumb:before': {
-        backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 20 20"><path fill="${encodeURIComponent(
-          '#fff',
-        )}" d="M4.2 2.5l-.7 1.8-1.8.7 1.8.7.7 1.8.6-1.8L6.7 5l-1.9-.7-.6-1.8zm15 8.3a6.7 6.7 0 11-6.6-6.6 5.8 5.8 0 006.6 6.6z"/></svg>')`,
-      },
-      '& + .MuiSwitch-track': {
-        opacity: 1,
-        // backgroundColor: theme.palette.mode === 'dark' ? '#8796A5' : '#aab4be',
-        backgroundColor: theme.palette.mode === 'dark' ? '#2ECA45' : '#9152d1',
-      },
-    },
-  },
-  '& .MuiSwitch-thumb': {
-    // backgroundColor: theme.palette.mode === 'dark' ? '#003892' : '#001e3c',
-    backgroundColor: theme.palette.mode === 'light' ? '#323abb' : '#39393D',
-    width: 32,
-    height: 32,
-    '&:before': {
-      content: "''",
-      position: 'absolute',
-      width: '100%',
-      height: '100%',
-      left: 0,
-      top: 0,
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center',
-      backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 20 20"><path fill="${encodeURIComponent(
-        '#fff',
-      )}" d="M9.305 1.667V3.75h1.389V1.667h-1.39zm-4.707 1.95l-.982.982L5.09 6.072l.982-.982-1.473-1.473zm10.802 0L13.927 5.09l.982.982 1.473-1.473-.982-.982zM10 5.139a4.872 4.872 0 00-4.862 4.86A4.872 4.872 0 0010 14.862 4.872 4.872 0 0014.86 10 4.872 4.872 0 0010 5.139zm0 1.389A3.462 3.462 0 0113.471 10a3.462 3.462 0 01-3.473 3.472A3.462 3.462 0 016.527 10 3.462 3.462 0 0110 6.528zM1.665 9.305v1.39h2.083v-1.39H1.666zm14.583 0v1.39h2.084v-1.39h-2.084zM5.09 13.928L3.616 15.4l.982.982 1.473-1.473-.982-.982zm9.82 0l-.982.982 1.473 1.473.982-.982-1.473-1.473zM9.305 16.25v2.083h1.389V16.25h-1.39z"/></svg>')`,
-    },
-  },
-  '& .MuiSwitch-track': {
-    opacity: 1,
-    backgroundColor: theme.palette.mode === 'dark' ? '#8796A5' : '#aab4be',
-    // backgroundColor: theme.palette.mode === 'light' ? '#E9E9EA' : '#39393D',
-    borderRadius: 20 / 2,
-  },
-}));
-
 
 
 const settings = {
@@ -446,6 +311,24 @@ export default function Home() {
     //   timePeriod: "2024",
     //   certificate: "/certificates/certifications/Bootcamp-System_Design-Excellence.pdf",
     // },
+    {
+      degree: "Dimensions of Data Privacy",
+      description: "<p>HCLTech<br />Certificate of Completion</p>",
+      timePeriod: "2025",
+      certificate: "/certificates/certifications/Certificate_of_Completion_Dimensions_of_Data_Privacy.pdf",
+    },
+    {
+      degree: "Export Compliance",
+      description: "<p>HCLTech<br />Certificate of Completion</p>",
+      timePeriod: "2025",
+      certificate: "/certificates/certifications/Certificate_of_Completion_Export_Compliance.pdf",
+    },
+    {
+      degree: "Information Security",
+      description: "<p>HCLTech<br />Certificate of Completion</p>",
+      timePeriod: "2025",
+      certificate: "/certificates/certifications/Certificate_of_Completion_Information_Security.pdf",
+    },
   ]);
   const [honors, setHonors] = useState([
     {
@@ -473,16 +356,39 @@ export default function Home() {
   ]);
   const [workExperience, setWorkExperience] = useState([
     {
+      company_name: "Dataconsol Pvt. Ltd.",
+      link: "https://dataconsol.com/",
+      logo: "",
+      location: "Telangana, Hyderabad (Remote)",
+      work_type: "work_from_home",
+      designation: "Full Stack Engineer",
+      timePeriod: "May 2025 - Present",
+      work_experience_description: "",
+      work_experience_letter: "",
+    },
+    {
       company_name: "",
-      // company_name: "SYMB Technologies Pvt Ltd.",
+      // company_name: "Ammaiya Services Pvt. Ltd.",
+      link: "https://ammaiya.com/",
+      logo: "/images/ammaiya_logo.png",
+      location: "Rohini, Delhi (Remote)",
+      work_type: "work_from_home",
+      designation: "Software Engineer (Freelance)",
+      timePeriod: "Feb 2024 - May 2025",
+      work_experience_description: "<p><ul><li>Streamlined <b>Functionalities</b> to the Web Applications by using <b>JavaScript, jQuery, AJAX,</b> increasing usefulness by 65%</li><li>Built <b>Email Templates</b> for Web Applications for providing Information to Customers, increasing interactivity by 30%</li><li><b>Enhanced user experience</b> by designing responsive UIs, boosting mobile traffic by 35%</li><li><b>Interpreted Client’s Requirement into Digital Solutions</b> and delivering the Effective & Efficient Results into the Project By Communicating with the Client Directly</li></ul></p>",
+      work_experience_letter: "/experience_letter/Ammaiya_Aditya_kapoor_Reliving_letter.pdf",
+    },
+    {
+      company_name: "",
+      // company_name: "SYMB Technologies Pvt. Ltd.",
       link: "https://www.symbtechnologies.com/",
       logo: "/images/symb_technologies_logo2.png",
-      location: "Noida, Uttar Pradesh",
+      location: "Noida, Uttar Pradesh (Remote)",
       work_type: "work_from_home",
       designation: "Software Engineer",
       timePeriod: "Jan 2022 - Jan 2024",
-      work_experience_description: "<p><ul><li>Designed and developed Responsive Web Applications on the basis of client requirements using React JS, Next JS & Node JS</li><li>Assembled Web Application's back-end (APIs) by using Node JS</li><li>Streamlined Functionality to the Web Applications by using Java Script, JQuery, AJAX</li><li>Interpreted Client’s Requirement into Digital Solutions and delivering the Effective & Efficient Results into the Project By Communicating with the Client Directly</li><li>Integrated Payment Gateways on Web Applications for money transfers</li><li>Built Email Templates for Web Applications for providing Information about Customers & Clients Orders, Enquiries & Required Data</li><li>Coached interns and trained them on live company projects.</li><li>Upgraded existing applications to add new functionalities and remove bugs.</li><li>Coordinated with team members on live projects and got complete understanding of live company projects</li></ul></p>",
-      work_experience_letter: "",
+      work_experience_description: "<p><ul><li>Developed and <b>maintained 7+ dynamic websites using React.js & Next.js,</b> increasing client engagement by 30%</li><li>Integrated <b>RESTful APIs</b> to enhance functionality, <b>reducing server response time by 40%</b></li><li>Integrated <b>Payment Gateways</b> like <b>Razorpay</b> to enhance functionality, <b>reducing server response time by 40%</b></li><li><b>Coached</b> interns and <b>Trained</b> them on live company projects.</li></ul></p>",
+      work_experience_letter: "/experience_letter/SYMB_Technologies_Pvt_Ltd_Experience_Letter.pdf",
     },
   ]);
   const [companyProjects, setCompanyProjects] = useState([
@@ -558,6 +464,16 @@ export default function Home() {
       timePeriod: "May 2025",
       description: "PhotoFolio is a web application for organizing, viewing, and managing photo albums with a sleek dark/light mode interface. Built with React (Front-End) and Firebase (Back-End), it's key features are like Theme System, Album Management, Image Handling. ",
       highlightProject: true,
+      type: "react",
+    },
+    {
+      name: "To Do List",
+      link: "https://precious-malabi-60c504.netlify.app/",
+      gitLink: "https://github.com/AdityaKapoor234/to-do-list-react",
+      logo: "",
+      timePeriod: "May 2025",
+      description: "To-Do List is a web application where users can add various items to the to-do list and delete a particular item present inside the to-do list.",
+      highlightProject: false,
       type: "react",
     },
     {
@@ -752,16 +668,16 @@ export default function Home() {
   }
 
   useEffect(() => {
-    // let date = new Date();
-    // date.setMinutes(date.getMinutes() - date.getTimezoneOffset());
-    // let exprience = parseInt(date.getFullYear()) - 2022;
-    // let exprienceMonth = parseInt(date.getMonth());
+    let date = new Date();
+    date.setMinutes(date.getMinutes() - date.getTimezoneOffset());
+    let exprience = parseInt(date.getFullYear()) - 2022;
+    let exprienceMonth = parseInt(date.getMonth());
 
-    // setExperienceYears(exprience);
-    // setExperienceMonths(exprienceMonth);
+    setExperienceYears(exprience);
+    setExperienceMonths(exprienceMonth);
 
-    setExperienceYears(2);
-    setExperienceMonths(0);
+    // setExperienceYears(2);
+    // setExperienceMonths(0);
 
     if (localStorage.getItem("AdityaKapoorPortfolioTheme") === "Dark") {
       setTheme(true);
