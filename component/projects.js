@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import React, { useState, useEffect } from "react";
+import { settings, companyProjects, personalProjects } from "../pages/data";
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import Slider from "react-slick";
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -15,23 +16,13 @@ import CloseIcon from '@mui/icons-material/Close';
 import Typography from "@mui/material/Typography";
 
 export default function ProjectComponent(props) {
-    const [settings, setSettings] = useState(props?.profileSettings);
-
     const [theme, setTheme] = useState(props?.layoutTheme);
-
-    const [companyProjects, setCompanyProjects] = useState(props?.profileCompanyProjects);
-    const [personalProjects, setPersonalProjects] = useState(props?.profilePersonalProjects);
 
     const [showAllCompanyProjects, setShowAllCompanyProjects] = useState(false);
     const [showAllpersonalProjects, setShowAllPersonalProjects] = useState(false);
 
     useEffect(() => {
-        setSettings(props?.profileSettings);
-
         setTheme(props?.layoutTheme);
-
-        setCompanyProjects(props?.profileCompanyProjects);
-        setPersonalProjects(props?.profilePersonalProjects);
     }, [props]);
 
 
@@ -339,7 +330,7 @@ export default function ProjectComponent(props) {
                             <main className={theme === false ? "light" : "dark"}>
                                 <div>
                                     <div className="projectsPopUpBox" id="projects">
-                                    {
+                                        {
                                             personalProjects?.filter((elem) => elem?.type === "react")?.length > 0 &&
                                             <div className="projectComapanyName">
                                                 &#x2714;&nbsp;&nbsp;React.js Projects

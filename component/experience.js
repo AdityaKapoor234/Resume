@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import React, { useState, useEffect } from "react";
+import { workExperience, settings } from "../pages/data";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import HomeIcon from '@mui/icons-material/Home';
@@ -11,18 +12,10 @@ import Slider from "react-slick";
 
 
 export default function ExperienceComponent(props) {
-    const [settings, setSettings] = useState(props?.profileSettings);
-
     const [theme, setTheme] = useState(props?.layoutTheme);
 
-    const [workExperience, setWorkExperience] = useState(props?.profileWorkExperience);
-
     useEffect(() => {
-        setSettings(props?.profileSettings);
-
         setTheme(props?.layoutTheme);
-
-        setWorkExperience(props?.profileWorkExperience);
     }, [props]);
 
 

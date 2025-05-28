@@ -2,44 +2,33 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import React, { useState, useEffect } from "react";
+import { education, certification, honors, achievements, publication } from "../pages/data";
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 import LinkIcon from '@mui/icons-material/Link';
 
 export default function QualificationComponent(props) {
     const [theme, setTheme] = useState(props?.layoutTheme);
 
-    const [education, setEducation] = useState(props?.profileEducation);
-    const [certification, setCertification] = useState(props?.profileCertification);
-    const [honors, setHonors] = useState(props?.profileHonors);
-    const [achievements, setAchievements] = useState(props?.profileAchievements);
-    const [publication, setPublication] = useState(props?.profilePublication);
-
     const [noOfTabs, setNoOfTabs] = useState(2);
 
     useEffect(() => {
         setTheme(props?.layoutTheme);
 
-        setEducation(props?.profileEducation);
-        setCertification(props?.profileCertification);
-        setHonors(props?.profileHonors);
-        setAchievements(props?.profileAchievements);
-        setPublication(props?.profilePublication);
-
         let tabs = 0;
 
-        if (props?.profileEducation?.length > 0) {
+        if (education?.length > 0) {
             tabs += 1;
         }
-        if (props?.profileCertification?.length > 0) {
+        if (certification?.length > 0) {
             tabs += 1;
         }
-        if (props?.profileHonors?.length > 0) {
+        if (honors?.length > 0) {
             tabs += 1;
         }
-        if (props?.profileAchievements?.length > 0) {
+        if (achievements?.length > 0) {
             tabs += 1;
         }
-        if (props?.profilePublication?.length > 0) {
+        if (publication?.length > 0) {
             tabs += 1;
         }
 
