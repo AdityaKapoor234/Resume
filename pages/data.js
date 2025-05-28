@@ -1,5 +1,6 @@
-
-
+export default function DataPage() {
+    return null;
+};
 
 export const settings = {
     className: "center",
