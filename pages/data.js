@@ -54,10 +54,10 @@ export const settings = {
 };
 export const education = [
     {
-        degree: "High School (10+2)",
-        description: "<p>Universal Public School, Preet Vihar, Delhi-110092<br />Subject: Commerce with Maths</p>",
-        timePeriod: "2014-15",
-        certificate: "",
+        degree: "MCA",
+        description: "<p>Galgotias University, Greater Noida<br />Specialization Subject: Software Development<br/>First Class with Distinction (9.07 CGPA)</p>",
+        timePeriod: "2019-22",
+        certificate: "/certificates/degree/MCA_Degree.pdf",
     },
     {
         degree: "B.Com",
@@ -66,60 +66,30 @@ export const education = [
         certificate: "",
     },
     {
-        degree: "MCA",
-        description: "<p>Galgotias University, Greater Noida<br />Specialization Subject: Software Development<br/>First Class with Distinction (9.07 CGPA)</p>",
-        timePeriod: "2019-22",
-        certificate: "/certificates/degree/MCA_Degree.pdf",
+        degree: "High School (10+2)",
+        description: "<p>Universal Public School, Preet Vihar, Delhi-110092<br />Subject: Commerce with Maths</p>",
+        timePeriod: "2014-15",
+        certificate: "",
     },
 ];
 export const certification = [
     {
-        degree: "DOEACC 'O' Level",
-        description: "<p>National Institute of Electronics & Information Technology (NIELIT)<br />First Class (6.8 CGPA)</p>",
-        timePeriod: "2015-16",
-        certificate: "",
-    },
-    {
-        degree: "DOEACC 'A' Level",
-        description: "<p>National Institute of Electronics & Information Technology (NIELIT)<br />First Class (6.8 CGPA)</p>",
-        timePeriod: "2017-18",
-        certificate: "",
-    },
-    {
-        degree: "IoT (Internet of Things)",
-        description: "<p>National Programme on Technology Enhanced Learning (NPTEL)<br />First Class with Distinction (98%)</p>",
-        timePeriod: "2020",
-        certificate: "/certificates/certifications/NPTEL_IoT.jpg",
-    },
-    {
-        degree: "Front End | Full Stack Development",
-        description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
-        timePeriod: "2024",
-        certificate: "/certificates/certifications/Bootcamp-Front_End-Full_Stack_Development-Excellence.pdf",
-    },
-    {
-        degree: "Introduction to Java",
-        description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
-        timePeriod: "2024",
-        certificate: "/certificates/certifications/Bootcamp-Introduction_To_Java-Excellence.pdf",
-    },
-    // {
-    //   degree: "Data Structures & Algorithms with Java",
-    //   description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
-    //   timePeriod: "2024",
-    //   certificate: "/certificates/certifications/Bootcamp-Data_Structures_And_Algorithm_With_Java-Excellence.pdf",
-    // },
-    // {
-    //   degree: "Java Web Development (Spring Boot)",
-    //   description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
-    //   timePeriod: "2024",
-    //   certificate: "/certificates/certifications/Bootcamp-Java_Web_Development-Spring_Boot-Excellence.pdf",
-    // },
-    {
-        degree: "React | Full Stack Development",
-        description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
+        degree: "Information Security",
+        description: "<p>HCLTech<br />Certificate of Completion</p>",
         timePeriod: "2025",
-        certificate: "/certificates/certifications/Bootcamp-React-Full_Stack_Development-Excellence.pdf",
+        certificate: "/certificates/certifications/Certificate_of_Completion_Information_Security.pdf",
+    },
+    {
+        degree: "Export Compliance",
+        description: "<p>HCLTech<br />Certificate of Completion</p>",
+        timePeriod: "2025",
+        certificate: "/certificates/certifications/Certificate_of_Completion_Export_Compliance.pdf",
+    },
+    {
+        degree: "Dimensions of Data Privacy",
+        description: "<p>HCLTech<br />Certificate of Completion</p>",
+        timePeriod: "2025",
+        certificate: "/certificates/certifications/Certificate_of_Completion_Dimensions_of_Data_Privacy.pdf",
     },
     // {
     //   degree: "Aptitude Rounds",
@@ -146,22 +116,52 @@ export const certification = [
     //   certificate: "/certificates/certifications/Bootcamp-System_Design-Excellence.pdf",
     // },
     {
-        degree: "Dimensions of Data Privacy",
-        description: "<p>HCLTech<br />Certificate of Completion</p>",
+        degree: "React | Full Stack Development",
+        description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
         timePeriod: "2025",
-        certificate: "/certificates/certifications/Certificate_of_Completion_Dimensions_of_Data_Privacy.pdf",
+        certificate: "/certificates/certifications/Bootcamp-React-Full_Stack_Development-Excellence.pdf",
+    },
+    // {
+    //   degree: "Java Web Development (Spring Boot)",
+    //   description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
+    //   timePeriod: "2024",
+    //   certificate: "/certificates/certifications/Bootcamp-Java_Web_Development-Spring_Boot-Excellence.pdf",
+    // },
+    // {
+    //   degree: "Data Structures & Algorithms with Java",
+    //   description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
+    //   timePeriod: "2024",
+    //   certificate: "/certificates/certifications/Bootcamp-Data_Structures_And_Algorithm_With_Java-Excellence.pdf",
+    // },
+    {
+        degree: "Introduction to Java",
+        description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
+        timePeriod: "2024",
+        certificate: "/certificates/certifications/Bootcamp-Introduction_To_Java-Excellence.pdf",
     },
     {
-        degree: "Export Compliance",
-        description: "<p>HCLTech<br />Certificate of Completion</p>",
-        timePeriod: "2025",
-        certificate: "/certificates/certifications/Certificate_of_Completion_Export_Compliance.pdf",
+        degree: "Front End | Full Stack Development",
+        description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
+        timePeriod: "2024",
+        certificate: "/certificates/certifications/Bootcamp-Front_End-Full_Stack_Development-Excellence.pdf",
     },
     {
-        degree: "Information Security",
-        description: "<p>HCLTech<br />Certificate of Completion</p>",
-        timePeriod: "2025",
-        certificate: "/certificates/certifications/Certificate_of_Completion_Information_Security.pdf",
+        degree: "IoT (Internet of Things)",
+        description: "<p>National Programme on Technology Enhanced Learning (NPTEL)<br />First Class with Distinction (98%)</p>",
+        timePeriod: "2020",
+        certificate: "/certificates/certifications/NPTEL_IoT.jpg",
+    },
+    {
+        degree: "DOEACC 'A' Level",
+        description: "<p>National Institute of Electronics & Information Technology (NIELIT)<br />First Class (6.8 CGPA)</p>",
+        timePeriod: "2017-18",
+        certificate: "",
+    },
+    {
+        degree: "DOEACC 'O' Level",
+        description: "<p>National Institute of Electronics & Information Technology (NIELIT)<br />First Class (6.8 CGPA)</p>",
+        timePeriod: "2015-16",
+        certificate: "",
     },
 ];
 export const honors = [
