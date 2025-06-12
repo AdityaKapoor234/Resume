@@ -161,7 +161,7 @@ export const certification = [
         degree: "DOEACC 'O' Level",
         description: "<p>National Institute of Electronics & Information Technology (NIELIT)<br />First Class (6.8 CGPA)</p>",
         timePeriod: "2015-16",
-        certificate: "",
+        certificate: "/certificates/certifications/O_Level_DOEACC.pdf",
     },
 ];
 export const honors = [
