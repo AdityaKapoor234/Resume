@@ -127,12 +127,12 @@ export const certification = [
     //   timePeriod: "2024",
     //   certificate: "/certificates/certifications/Bootcamp-Java_Web_Development-Spring_Boot-Excellence.pdf",
     // },
-    // {
-    //   degree: "Data Structures & Algorithms with Java",
-    //   description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
-    //   timePeriod: "2024",
-    //   certificate: "/certificates/certifications/Bootcamp-Data_Structures_And_Algorithm_With_Java-Excellence.pdf",
-    // },
+    {
+      degree: "Data Structures & Algorithms with Java",
+      description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
+      timePeriod: "2024",
+      certificate: "/certificates/certifications/Bootcamp-Data_Structure_&_Algorithm-Java-Excellence.pdf",
+    },
     {
         degree: "Introduction to Java",
         description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
