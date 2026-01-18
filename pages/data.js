@@ -97,22 +97,22 @@ export const certification = [
     //   timePeriod: "2024",
     //   certificate: "/certificates/certifications/Bootcamp-Aptitude_Rounds-Excellence.pdf",
     // },
-    // {
-    //   degree: "Operating Systems",
-    //   description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
-    //   timePeriod: "2024",
-    //   certificate: "/certificates/certifications/Bootcamp-Operating_Systems-Excellence.pdf",
-    // },
+    {
+      degree: "Operating Systems",
+      description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
+      timePeriod: "2025",
+      certificate: "/certificates/certifications/Interview_Preparation-Operating_Systems-Excellence.pdf",
+    },
     // {
     //   degree: "Database Management System (DBMS)",
     //   description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
-    //   timePeriod: "2024",
+    //   timePeriod: "2025",
     //   certificate: "/certificates/certifications/Bootcamp-Database_Management_System_(DBMS)-Excellence.pdf",
     // },
     // {
     //   degree: "System Design",
     //   description: "<p>Coding Ninjas<br />Certificate of Excellence</p>",
-    //   timePeriod: "2024",
+    //   timePeriod: "2025",
     //   certificate: "/certificates/certifications/Bootcamp-System_Design-Excellence.pdf",
     // },
     {
